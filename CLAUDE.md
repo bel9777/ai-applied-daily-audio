@@ -23,9 +23,10 @@ cutover logic removed.
    `bel9777/ai-applied-weekly-audio` Pages repo.
 3. **Pages 1 GB cap.** This repo grows ~3 MB/day (~10 months of headroom
    from 2026-10-12, so roughly Aug 2027). Prune plan: before ~800 MB,
-   delete the oldest `docs/audio` + `docs/transcripts` files and drop their
-   ledger entries (or move the oldest months to a second Pages repo like
-   the weekly host). Restore from git rather than regenerating if files
+   move the oldest months to a second Pages repo like the weekly host.
+   NEVER just delete old files + ledger entries: every Gmail day is still a
+   generation candidate, so main() would PAID-regenerate them (Codex audit
+   2026-10-05). Add a retained-date floor in main() before any pruning. Restore from git rather than regenerating if files
    vanish: filenames embed byte size, so restored blobs are byte-identical.
 4. **Gemini key file**: `~\.ai-keys\gemini-applied-api-key.txt` if it
    exists, else the shared `~\.ai-keys\gemini-api-key.txt`. The heartbeat
@@ -59,7 +60,10 @@ cutover logic removed.
     chaptered mp3 in `docs/weekly.xml` (this repo), audio pushed to the
     weekly host repo clone `~\ai-applied-weekly-audio` (`docs/weekly/`).
     Scratch build dir is outside the repo. Failures show as `weekly-FAILED`
-    in the heartbeat and never block the daily episode.
+    in the heartbeat and never block the daily episode. A week is recorded
+    in data/weekly.json only after Pages serves every new file at its exact
+    size (else it raises and the next run retries). Host path verified live
+    2026-10-05: `docs/weekly/<f>` in the clone serves at `/weekly/<f>`.
 
 ## Ops
 
