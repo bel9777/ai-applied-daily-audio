@@ -34,6 +34,10 @@ BUILD = Path.home() / "AppData" / "Local" / "ai-applied-weekly"
 FFPROBE = podcast.FFMPEG.with_name("ffprobe.exe")
 HOST = Path.home() / "ai-applied-weekly-audio"
 ASSET_BASE = "https://bel9777.github.io/ai-applied-weekly-audio/weekly"
+# The weekly host serves Pages from docs/, so /weekly/<name> lives at
+# docs/weekly/<name> in the clone (Codex audit 2026-10-05, P1: the fork
+# had kept the Foundations root-hosted path and would have 404ed).
+WEEK_DIR = HOST / "docs" / "weekly"
 COURSE_WEEK1 = date(2026, 10, 12)  # Monday of Day 1 (2026-10-12)
 GAP_SECONDS = 1.5
 
@@ -66,23 +70,31 @@ def _git(*args):
 
 
 def _publish_host(names):
-    """Commit + push new week files, then wait (max ~5 min) until Pages
-    serves the last one, so the feed never advertises a 404."""
-    _git("pull", "--rebase", "--quiet")
-    _git("add", "weekly")
-    _git("commit", "--quiet", "-m", f"Weekly audio: {', '.join(names)}")
+    """Commit (only if something changed) + push, then wait (max ~5 min)
+    until Pages serves EVERY new file at its declared size. Raises if not,
+    so update() does not record the week as done and the next run retries
+    (a push that failed earlier is retried too: push runs every time)."""
+    _git("add", "docs/weekly")
+    staged = subprocess.run(["git", "-C", str(HOST), "diff", "--cached", "--quiet"])
+    if staged.returncode == 1:
+        _git("commit", "--quiet", "-m", f"Weekly audio: {', '.join(names)}")
     _git("push", "--quiet")
     import time
     import urllib.request
+    pending = {n: (WEEK_DIR / n).stat().st_size for n in names}
     for _ in range(30):
-        try:
-            req = urllib.request.Request(f"{ASSET_BASE}/{names[-1]}", method="HEAD")
-            if urllib.request.urlopen(req, timeout=20).status == 200:
-                return
-        except Exception:
-            pass
+        for n, size in list(pending.items()):
+            try:
+                req = urllib.request.Request(f"{ASSET_BASE}/{n}", method="HEAD")
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    if r.status == 200 and int(r.headers.get("Content-Length", -1)) == size:
+                        pending.pop(n)
+            except Exception:
+                pass
+        if not pending:
+            return
         time.sleep(10)
-    print("  weekly: Pages not serving yet - feed will catch up next run")
+    raise RuntimeError(f"Pages not serving {sorted(pending)} after ~5 min")
 
 
 def _compile(week, eps, out):
@@ -134,6 +146,8 @@ def update(eps=None, today=None):
     for e in eps.values():
         weeks.setdefault(_week_start(e["publishedAt"]), []).append(e)
     built, new_files = 0, []
+    if HOST.exists():
+        _git("pull", "--rebase", "--quiet")  # sync BEFORE touching any file
     for start, items in sorted(weeks.items()):
         items.sort(key=lambda e: e["day"])
         end = start + timedelta(days=6)
@@ -152,11 +166,11 @@ def update(eps=None, today=None):
                 "title": f"Week {n} ({span}): Days {items[0]['day']}–{items[-1]['day']}",
                 "days": [e["day"] for e in items]}
         name = f"week-{n:02d}-{start.isoformat()}-{key}.mp3"
-        out = HOST / "weekly" / name
+        out = WEEK_DIR / name
         out.parent.mkdir(parents=True, exist_ok=True)
         week["chapters"], week["durationSeconds"] = _compile(week, items, out)
         old = ledger.get(start.isoformat(), {}).get("url", "")
-        stale = HOST / "weekly" / old.rsplit("/", 1)[-1] if old else None
+        stale = WEEK_DIR / old.rsplit("/", 1)[-1] if old else None
         if stale and stale.exists() and stale != out:
             stale.unlink()  # superseded re-compile; git history keeps it
         week["url"] = f"{ASSET_BASE}/{name}"
