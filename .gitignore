@@ -1,0 +1,7 @@
+__pycache__/
+*.wav
+*.tmp.wav
+*.new.mp3
+*.pyc
+scratch/
+.env*
