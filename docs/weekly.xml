@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Applied — Weekly Collections</title>
+    <link>https://bel9777.github.io/ai-applied-daily-audio/</link>
+    <language>en-us</language>
+    <description>Each week of AI Applied Daily as one continuous listen, with a chapter per day. Companion to the daily feed.</description>
+    <itunes:author>AI Applied</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
+    <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
+
+  </channel>
+</rss>

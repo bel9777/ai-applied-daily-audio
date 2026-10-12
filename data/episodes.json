@@ -1,0 +1,21 @@
+[
+ {
+  "day": 1,
+  "title": "Lesson 1: Claude Code Today: Models, Modes, and What It Is Best At",
+  "format": "two-host",
+  "guid": "applied-day-001",
+  "publishedAt": "2026-10-12T06:31:32",
+  "audioPath": "/audio/day-001-lesson-1-claude-code-today-models-modes-and-what-it-is-best-at-3418893.mp3",
+  "transcriptPath": "/transcripts/day-001-3418893.txt",
+  "audioBytes": 3418893,
+  "durationSeconds": 284,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 774,
+   "lra": 4.1,
+   "lufs": -16.7,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ }
+]
