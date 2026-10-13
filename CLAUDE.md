@@ -36,11 +36,16 @@ cutover logic removed.
    models via the models endpoint if any 404.
 5. **Episode spec is Brian-approved**: a format copy of the sibling course
    at 600-750 words of dialogue (~4-5 min). `episode_shape()` switches on
-   title prefix: `Lesson N:` tool deep dive (hook, what it is / what
-   changed, how to use it, gotcha, 2-question check, try-it homework beat -
-   never drop it, tomorrow tease), `Applied:` design walkthrough, `Build:`
-   build walkthrough, `Release Radar` news show with adopt/try/watch/ignore
-   verdicts, `Weekly Review` quiz show. Spoken audio never reads URLs, code
+   title prefix (North Star v2, 2026-10-12): `Lab N:` Mon/Tue/Thu Microsoft
+   365 Copilot lab (hook, feature + license, lab steps described not read,
+   limits/controls, 2-question check, lab-as-homework beat), `Lesson N:`
+   Wed frontier deep dive (hook, what it is / what changed, how to use it,
+   gotcha, 2-question check, try-it homework beat - never drop it, tomorrow
+   tease), `Build:` Fri active-build step, `Release Radar` news show with
+   adopt/try/watch/ignore verdicts + a Microsoft 365 Copilot segment,
+   `Weekly Review` quiz show. `Applied:` is kept only for the pre-v2
+   archive. The show is public: the prompt forbids naming his employer,
+   colleagues, properties or vendors. Spoken audio never reads URLs, code
    or HTML aloud. Change voices/format only on Brian's say-so.
 6. **Hard dependency on `~\ai-applied-kindle\build.py`**
    (`gmail_token`, `pull_copies`, `select_days`). Importing it also forces

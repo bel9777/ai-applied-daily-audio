@@ -127,19 +127,39 @@ def gapi(path, payload, timeout=300, attempts=3):
 
 
 def episode_shape(day, title, lesson):
-    """Episode structure by title prefix: Mon-Wed tool lesson, Thu Applied
-    design, Fri Build, Sat Release Radar, Sun Weekly Review."""
-    m = re.match(r"Lesson (\d+):", title)
-    intro = (f'then "This is AI Applied, lesson {m.group(1)}."' if m
+    """Episode structure by title prefix (North Star v2, 2026-10-12): Mon/Tue/
+    Thu "Lab N:" Microsoft 365 Copilot lab, Wed "Lesson N:" frontier lesson,
+    Fri "Build:", Sat "Release Radar", Sun "Weekly Review". "Applied:" is
+    kept for the pre-v2 archive."""
+    m = re.match(r"(Lesson|Lab) (\d+):", title)
+    intro = (f'then "This is AI Applied, {m.group(1).lower()} {m.group(2)}."' if m
              else 'then "This is AI Applied."')
+    if title.startswith("Lab "):
+        return f"""Rules:
+- {HOST} opens with a one-sentence hook: the everyday finance task this
+  Microsoft 365 Copilot feature helps with, {intro} Then dive in.
+- {EXPERT} explains what the feature is, what license it needs, and what
+  changed recently, in plain words.
+- Then walk through the lab at a high level: the sample data to make, the
+  key steps, and what you should see. Never read prompts, menus or
+  click paths word for word; describe them.
+- Then the limits: where it gets things wrong, and how a finance team
+  would check and control it.
+- Then {EXPERT} gives a quick check - two questions from the lab;
+  {HOST} answers in their own words, {EXPERT} confirms or sharpens.
+- Close by assigning the lab as homework in one tight beat, and a
+  one-line tease of tomorrow's topic if the lab names one."""
     if title.startswith("Release Radar"):
         return f"""Rules:
 - Open with {HOST} teasing the single biggest release of the week, {intro}
-- Run it as a news show. For every item in the briefing: what shipped, then
-  the verdict - adopt, try, watch, or ignore - and why, for Brian's stack.
-  {EXPERT} names the source for each claim ("according to the release
-  notes", "the announcement says") - never invent details beyond the
-  briefing.
+- Run it as a news show. For the four or five biggest items: what shipped,
+  then the verdict - adopt, try, watch, or ignore - and why, for Brian's
+  stack. {EXPERT} names the source for each claim ("according to the
+  release notes", "the announcement says") - never invent details beyond
+  the briefing.
+- Then a short Microsoft 365 Copilot segment: each item from the briefing's
+  Microsoft section in one or two sentences, with its status (rolling out,
+  generally available, preview, or on the roadmap).
 - End with "what to watch" for next week in one beat."""
     if title.startswith("Weekly Review"):
         return f"""Rules:
@@ -164,7 +184,7 @@ def episode_shape(day, title, lesson):
   you should see. Never read code, commands, or file contents aloud.
 - Call out the checkpoints that tell you it's working so far.
 - Cover the likely failures and how to recognize them.
-- Close with the stretch goal for anyone who finishes early."""
+- Close with what counts as done and the one piece of evidence to keep."""
     return f"""Rules:
 - {HOST} opens with a one-sentence hook about a concrete problem Brian
   has that today's tool addresses, {intro} Then dive in.
@@ -191,6 +211,8 @@ Hosts:
   grounded, never lectures for long without {HOST} jumping in.
 
 {episode_shape(day, title, lesson)}
+- This show is public: never name or guess Brian's employer, colleagues,
+  properties or vendors, and never invent real-sounding figures.
 - Sound like two real people: contractions, short sentences, occasional
   quick banter. No corporate speak, no "delve", no "great question", no
   filler praise between hosts.

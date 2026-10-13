@@ -1,5 +1,24 @@
 [
  {
+  "day": 2,
+  "title": "Lesson 2: Codex and ChatGPT: Where OpenAI's Agents Fit",
+  "format": "two-host",
+  "guid": "applied-day-002",
+  "publishedAt": "2026-10-13T06:31:27",
+  "audioPath": "/audio/day-002-lesson-2-codex-and-chatgpt-where-openai-s-agents-fit-3208653.mp3",
+  "transcriptPath": "/transcripts/day-002-3208653.txt",
+  "audioBytes": 3208653,
+  "durationSeconds": 267,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 727,
+   "lra": 4.1,
+   "lufs": -16.6,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 1,
   "title": "Lesson 1: Claude Code Today: Models, Modes, and What It Is Best At",
   "format": "two-host",

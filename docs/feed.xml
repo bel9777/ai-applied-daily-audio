@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 2: Lesson 2: Codex and ChatGPT: Where OpenAI&#x27;s Agents Fit</title>
+      <description>Lesson 2: Codex and ChatGPT: Where OpenAI&#x27;s Agents Fit - AI Applied day 2, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-002</guid>
+      <pubDate>Tue, 13 Oct 2026 06:31:27 +0000</pubDate>
+      <itunes:episode>2</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-002-lesson-2-codex-and-chatgpt-where-openai-s-agents-fit-3208653.mp3" length="3208653" type="audio/mpeg"/>
+      <itunes:duration>4:27</itunes:duration>
+    </item>
+    <item>
       <title>Day 1: Lesson 1: Claude Code Today: Models, Modes, and What It Is Best At</title>
       <description>Lesson 1: Claude Code Today: Models, Modes, and What It Is Best At - AI Applied day 1, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-001</guid>

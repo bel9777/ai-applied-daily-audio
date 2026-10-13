@@ -1,0 +1,25 @@
+Alex: Brian has dozens of unattended scripts running silently in the background, and when one breaks, figuring out what failed without breaking production is a headache. This is AI Applied, lesson two.
+Jordan: Today we're mapping where OpenAI fits into Brian's stack. The short answer: use Codex for software and script maintenance, use ChatGPT Work for multi-step business deliverables, and keep unattended production loops on your own controlled scripts.
+Alex: Right, because OpenAI's product line has shifted quite a bit lately. What changed?
+Jordan: The biggest shift is that Operator as a standalone product is gone. It's folded directly into ChatGPT agent mode. If you need longer research or report deliverables, that's ChatGPT Work now. Meanwhile, Codex handles software. It's included across ChatGPT plans, with Codex Cloud available on paid tiers, alongside the local command line tool.
+Alex: And they launched the Agents API recently too, right?
+Jordan: Exactly, with sandboxes and computer use. But that's for developers building durable agent apps. If Brian just needs to inspect a broken script today, he shouldn't build an API agent. He should use Codex locally.
+Alex: Walk me through the exact workflow Brian should use to tune up one of his background scripts.
+Jordan: First, pick one unattended loop, like his Gmail watchdog script. Copy it into a separate test folder. Initialize Git and make a baseline commit so every single edit is tracked.
+Alex: Clean sandbox, safe baseline. Then what?
+Jordan: Fire up the Codex command line inside that folder. Give it very strict boundaries: tell it this script runs on a laptop using only standard Python libraries, it uses local credentials, and it must not make external network calls or delete files during the review.
+Alex: And what's the actual task we hand it?
+Jordan: Ask it to do five specific things. Inspect the repo, identify the top operational failure modes, add a dry-run flag, improve logging so auth errors and rate limits look distinct, and write an operations section in the readme covering restart, rollback, and test evidence. Then ask it to run safe local tests and show the diff.
+Alex: So Codex prepares the change, but it doesn't touch the Windows Task Scheduler.
+Jordan: Never. In finance and operations, agent autonomy must always stay lower than financial authority. Codex prepares the pull request; Brian reviews the code; deployment stays manual.
+Alex: That leads right into the gotchas. What bites people here?
+Jordan: First, billing confusion. Running Codex through your ChatGPT login draws from your plan quota, but passing an API key bills directly to your credit card. Second, data handling. Business and API tiers don't train on your data by default, but lower consumer tiers might unless opted out. And local does not mean air-gapped. Task context still syncs to the cloud. Never put live bank credentials or sensitive lease exports in a sandbox.
+Alex: Makes total sense. Time for our quick check. Hit me.
+Jordan: First question. You have a rent reconciliation generator that creates a journal upload template. Which OpenAI surface fixes the code, and what gate stays outside the agent?
+Alex: Codex fixes the Python script because it's software work. The gate outside is journal posting and data approval. The agent never posts directly to the ledger; a human reviews the diff, tests against a prior close period, and signs off.
+Jordan: Spot on. Segregation of duties applies to AI too. Second question. The farm needs a weekly email campaign matching freezer inventory to market dates. What does ChatGPT Work do, and what stays manual?
+Alex: ChatGPT Work acts like an analyst workbench. It cross-checks inventory CSVs against email copy, drafts the campaign calendar, and flags mismatches. But final pricing, discount decisions, and hitting send in the email tool remain strictly manual.
+Jordan: Exactly right. Let the model draft and QA; keep the send button human.
+Alex: Perfect. What's the homework for today?
+Jordan: Grab one low-risk background script, make a copy in a test directory, strip out live credentials, commit a Git baseline, and run Codex CLI against it with our five-step prompt. Notice whether it respects your standard-library constraint, and notice if the diff actually produces audit-ready evidence instead of just rewriting working code.
+Alex: Tomorrow on lesson three, we dig into Gemini and Google AI Studio, and where to draw the line between free and paid. See you then.
