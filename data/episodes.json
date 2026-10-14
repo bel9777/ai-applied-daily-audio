@@ -1,5 +1,24 @@
 [
  {
+  "day": 3,
+  "title": "Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line",
+  "format": "two-host",
+  "guid": "applied-day-003",
+  "publishedAt": "2026-10-14T06:31:24",
+  "audioPath": "/audio/day-003-lesson-3-gemini-and-google-ai-studio-text-audio-and-the-free-vs-paid-line-3174093.mp3",
+  "transcriptPath": "/transcripts/day-003-3174093.txt",
+  "audioBytes": 3174093,
+  "durationSeconds": 264,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 702,
+   "lra": 4.0,
+   "lufs": -16.8,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 2,
   "title": "Lesson 2: Codex and ChatGPT: Where OpenAI's Agents Fit",
   "format": "two-host",

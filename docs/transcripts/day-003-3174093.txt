@@ -1,0 +1,23 @@
+Alex: Brian has messy lease clauses and raw rent notes sitting in spreadsheets, but he needs structured accounting exceptions without booking bad entries into an ERP. This is AI Applied, lesson 3.
+Jordan: Today we are talking about Google AI Studio and Gemini, specifically the shift from messing around in a web UI to using it as a fast, Google-native workbench.
+Alex: And Gemini moved again this week, right? What is actually current right now?
+Jordan: The practical default right now is gemini-3.8-flash for text and multimodal work, and gemini-3.8-flash-lite-tts for voice. Google marked gemini-4-argon as generally available too, but that reasoning model is paid tier only, not on the free tier. Also, gemini-3.7-flash was deprecated, so you cannot leave old model strings sitting in unattended scripts.
+Alex: Good to know. So how does Brian actually plug this into his real-estate finance work? Walk me through the lease abstract workflow.
+Jordan: Think of AI Studio as your staging ground. You go to the browser, pick gemini-3.8-flash, drop the temperature low, and set the system prompt to act as a finance control assistant. You explicitly tell it: extract review points, do not invent amounts, do not post entries, return only JSON.
+Alex: What does the input look like?
+Jordan: You paste in the raw lease clause, amendment note, or rent schedule row. You instruct it to return specific JSON fields: property, tenant, period affected, amounts mentioned, close risk, control issue, recommended reviewer question, and evidence to save. 
+Alex: And then?
+Jordan: You click Get Code in AI Studio, pull that snippet into a Python script or Apps Script, and push that JSON straight into an Excel or CSV exception log. Brian uses it to draft the variance narrative, but a human reviewer signs off before anything touches the general ledger.
+Alex: Which brings us right to the gotchas. What will bite someone if they are careless here?
+Jordan: The huge one is data privacy. On Google's free tier, your prompt data and responses can be used to train and improve their models. If Brian is running real university lease contracts or vendor invoices through this, he cannot use the free tier. Period. He has to use a billing-enabled paid project where prompts are not used for training. 
+Alex: What about on the technical side with background tasks?
+Jordan: Two things. First, standard API keys were phased out in favor of new auth keys, so audit those scripts. Second, rate limits. If a Task Scheduler script hits a 429 resource exhausted error, it cannot just spin out or fail silently. It needs bounded exponential backoff, a hard stop, and an alert that flags items for manual human review. Never let Gemini approve its own work.
+Alex: Let us do our quick check. First question: say Brian wants to summarize confidential lease amendments for month-end close support, but he is currently using the free tier. What has to change?
+Jordan: What do you think?
+Alex: He has to link a billing account and move to the paid Gemini API tier so his lease data is not used for model training. Plus, he needs to store the source text, model version, timestamp, and human sign-off as audit evidence.
+Jordan: Exactly right. Second question: a finance manager sees the JSON output and asks if Gemini can just automatically post the rent true-up entry whenever confidence is high. What is the control design answer?
+Alex: Absolutely not. Gemini is the preparer, never the approver. It drafts the exception memo and suggested entry, but an authorized human has to review the support package and post it through normal segregation-of-duties controls.
+Jordan: Spot on. It produces workpapers, not journal entries.
+Alex: What is the homework?
+Jordan: Take twenty to thirty minutes and add an exception-note step to an existing, low-risk Python loop. Use sanitized sample lines, prompt gemini-3.8-flash in AI Studio for valid JSON with fields for category, risk, and action, and export the code. Run ten test items, log the outputs to a CSV, and notice where it is genuinely reliable versus where it hallucinates confidence. 
+Alex: Tomorrow on Day 4, we map Brian's entire stack across Claude, Codex, Gemini, Python, and Excel into one governed real-estate finance workflow.

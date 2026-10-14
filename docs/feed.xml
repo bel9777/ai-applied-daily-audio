@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 3: Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line</title>
+      <description>Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line - AI Applied day 3, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-003</guid>
+      <pubDate>Wed, 14 Oct 2026 06:31:24 +0000</pubDate>
+      <itunes:episode>3</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-003-lesson-3-gemini-and-google-ai-studio-text-audio-and-the-free-vs-paid-line-3174093.mp3" length="3174093" type="audio/mpeg"/>
+      <itunes:duration>4:24</itunes:duration>
+    </item>
+    <item>
       <title>Day 2: Lesson 2: Codex and ChatGPT: Where OpenAI&#x27;s Agents Fit</title>
       <description>Lesson 2: Codex and ChatGPT: Where OpenAI&#x27;s Agents Fit - AI Applied day 2, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-002</guid>
