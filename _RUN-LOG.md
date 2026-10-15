@@ -7,3 +7,4 @@
 2026-10-11 08:00 OK made:0 ondisk:0 ledger:0 missing:0 key:applied PUSHED
 2026-10-12 08:01 OK made:1 ondisk:1 ledger:1 missing:0 key:applied PUSHED
 2026-10-13 08:01 OK made:1 ondisk:2 ledger:2 missing:0 key:applied PUSHED
+2026-10-14 08:02 OK made:1 ondisk:3 ledger:3 missing:0 key:applied PUSHED

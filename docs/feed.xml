@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 4: Applied: Your Stack, Mapped in Real-Estate Finance</title>
+      <description>Applied: Your Stack, Mapped in Real-Estate Finance - AI Applied day 4, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-004</guid>
+      <pubDate>Thu, 15 Oct 2026 06:31:25 +0000</pubDate>
+      <itunes:episode>4</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-004-applied-your-stack-mapped-in-real-estate-finance-3180141.mp3" length="3180141" type="audio/mpeg"/>
+      <itunes:duration>4:24</itunes:duration>
+    </item>
+    <item>
       <title>Day 3: Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line</title>
       <description>Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line - AI Applied day 3, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-003</guid>

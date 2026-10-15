@@ -1,0 +1,24 @@
+Alex: Every month, real-estate finance teams face the same grind: matching the rent schedule against landlord statements, chasing GL variances, and hand-crafting journal entries under tight close deadlines. This is AI Applied.
+Jordan: It is high-stakes work, but most of it is just repetitive reconciliation. And the biggest trap people fall into here is asking an AI to do the accounting. That is the wrong move.
+Alex: Right. You do not want a probabilistic model guessing whether October base rent is short fifty dollars.
+Jordan: Exactly. The core of this system is completely deterministic. We are using standard Python scripts to do the math, match records, check thresholds, and build an exception packet. The AI tools are just there to help build the code, review the logic, and draft simple explanations.
+Alex: Walk me through the stack. What are the moving parts?
+Jordan: At the base, you have a scheduled Python script. It grabs the monthly source files from a structured folder—things like the lease schedule, landlord statements, invoice registers, and GL actuals.
+Alex: And it checks those files first?
+Jordan: Yes. It hashes every file, checks timestamps, and confirms all required inputs are present. If a file is missing or renamed wrong, the script stops dead right there. If everything checks out, it runs the matching engine. It compares expected rent to actuals, identifies variances, and drafts the necessary journal entries.
+Alex: Where does AI come into the picture during the build?
+Jordan: We use Claude Code as the primary builder. It sets up the repository, writes the test suites, and enforces strict guardrails using hooks and permissions. Then we bring in OpenAI Codex as a second reviewer from a different model family to audit that code, looking for edge cases or silent failures Brian might have missed.
+Alex: And at runtime? Does AI touch the data every month?
+Jordan: Only in one very narrow, optional spot. We can route already-flagged exception rows through a paid Gemini API call to turn structured rows into plain-English summaries. Something like, October rent posted below schedule, preparer needs to confirm a landlord credit.
+Alex: Why specifically the paid tier for Gemini?
+Jordan: Crucial detail here: Google states on their pricing page that free-tier API data can be used to train and improve products, whereas paid tier data is not used for training. Even though Brian is sending redacted, lightweight snippets, you always stay on paid enterprise tiers for institutional finance data.
+Alex: That makes sense. Now, once that script finishes, what does the finance team actually see?
+Jordan: An Excel workbook and an HTML summary. The workbook has dedicated tabs for property exceptions, tie-outs, proposed journal entries, and a sign-off checklist. Critically, the script never pushes anything to the ERP. It only drafts the journal lines. A preparer reviews the packet, a reviewer signs off, and then a human uploads the approved entry through their normal, audited ERP process.
+Alex: Let us talk about what could break. What happens if a bad invoice slips in or a prompt injection hides inside a vendor description field?
+Jordan: The deterministic script treats all input text strictly as inert data, never instructions. And on the accounting side, the script enforces hard checks. For example, debits and credits must crossfoot to zero. If the journal lines are out of balance by even one cent, the script refuses to generate the final upload file.
+Alex: What about keeping the audit trail clean?
+Jordan: Every run logs the script version, input file hashes, run parameters, and output hashes. If an auditor asks six months from now why a journal entry was created, the exact state of that run is preserved in the archive folder.
+Alex: If Brian wants to test this out without blowing up his monthly budget, what does it cost?
+Jordan: Very manageable. A solo setup using Claude Pro and ChatGPT Plus runs around forty dollars a month. If he scales to a pilot with a reviewer, two ChatGPT Business Standard seats plus Claude Pro comes out to roughly seventy dollars monthly on month-to-month billing. Add a few pennies for Gemini API tokens with a hard spend cap.
+Alex: So what is the single first step Brian should take this week?
+Jordan: Do not start with AI prompts. Start by creating a folder with sanitized, fake-but-structural sample CSVs and write a one-paragraph control objective. Then have Claude Code build just the file validator and the run log. Get the source-file check rock solid first.

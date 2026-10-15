@@ -1,5 +1,24 @@
 [
  {
+  "day": 4,
+  "title": "Applied: Your Stack, Mapped in Real-Estate Finance",
+  "format": "two-host",
+  "guid": "applied-day-004",
+  "publishedAt": "2026-10-15T06:31:25",
+  "audioPath": "/audio/day-004-applied-your-stack-mapped-in-real-estate-finance-3180141.mp3",
+  "transcriptPath": "/transcripts/day-004-3180141.txt",
+  "audioBytes": 3180141,
+  "durationSeconds": 264,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 748,
+   "lra": 3.5,
+   "lufs": -16.7,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 3,
   "title": "Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line",
   "format": "two-host",
