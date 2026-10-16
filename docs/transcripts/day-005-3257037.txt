@@ -1,0 +1,29 @@
+Alex: Today, you're building a living cost-and-control map for your entire AI stack, completely automated and audit-ready. This is AI Applied.
+Jordan: Most people let AI tools sneak into their routine until nobody knows what is running, what it costs, or what happens if it breaks. In finance, you need an application inventory with spend control.
+Alex: Right. You cannot just tell a leadership team, I use AI. They need to know the tool, the owner, the cost basis, what data it touches, and where the evidence lives.
+Jordan: Exactly. So our goal today is a local folder containing a structured inventory file, an offline Python script that queries installed versions and sums up costs, and an HTML summary report ready for an audit folder.
+Alex: Let's walk through the build. First step is setting up the workspace.
+Jordan: Create a fresh local folder right in your user directory called ai-stack-map. Open PowerShell and change into that directory. Your first checkpoint is simply seeing that clean folder path in your prompt.
+Alex: Next is the script. What does it actually do under the hood?
+Jordan: It uses Python's standard library—no third-party packages, no network calls. It seeds a CSV file with your tools, like your coding assistants, cloud models, and automated scripts. Then it runs a quick version check on your local command-line tools, tallies fixed fees plus usage estimates, and writes out a clean HTML table.
+Alex: And the checkpoint when you save that script file?
+Jordan: Check that there are zero hardcoded API keys, zero secret tokens, and no sensitive employer or university data in the script. It should be entirely safe to share.
+Alex: Then we run it for the first time. What should we see?
+Jordan: Execute it with Python. In your console, you should see a confirmation message stating it wrote the HTML cost report. When you look in the folder, you will see two new files: the generated inventory CSV and that HTML report.
+Alex: That is our third checkpoint. But the seed data is just a starting point. We need to tailor the numbers.
+Jordan: Yes, open the CSV in Excel. You want to replace the placeholder zeros with your real fixed subscription fees and estimated API usage. Crucially, fill out the control columns: who owns it, how often it gets reviewed, and where review evidence is saved.
+Alex: Don't just list the AI models, either. You need the systems they touch.
+Jordan: Absolutely. Add the tools that hold actual business data—your farm storefront, your email marketing platform, your cloud storage. Even if they are not AI models, they are control dependencies. Every tool should have an explicit adoption decision, whether it is approved for prototypes, farm operations, or completely off-limits for restricted institutional data.
+Alex: Once the CSV is updated, run the script again so the HTML reflects the real numbers. What about scheduling?
+Jordan: Set up a daily Windows scheduled task to run early each morning. You want it to refresh automatically without popping up a terminal window or asking for permission.
+Alex: How do we know the scheduled task worked?
+Jordan: Query the task scheduler to see your new task listed, trigger a test run, and confirm the timestamp at the top of the HTML report updates to the current minute.
+Alex: Now, where do people usually get tripped up on this build?
+Jordan: Three main traps. First is billing surprise. For example, with coding assistants, if you have an API key set in your environment variables, the tool might bill per token instead of using your flat subscription allowance. Always verify how your CLI is authenticating.
+Alex: Second trap?
+Jordan: The report says not found next to a tool version. That means your terminal knew where the command was, but the background scheduled task does not have that executable on its path. Provide the full path in the CSV if needed.
+Alex: And the third?
+Jordan: The script runs when you click it, but fails when scheduled. That happens when a script relies on network drives or browser logins. Keep everything strictly on your local disk.
+Alex: What counts as done today, and what is the one piece of evidence to keep?
+Jordan: Done means your scheduled task refreshes the report without any prompts. Your one piece of evidence is that generated HTML report, saved into your records folder with an updated timestamp and your total monthly spend.
+Alex: Tomorrow on Release Radar: what changed this week, what is actually shipped versus preview, and what you can safely ignore for now.

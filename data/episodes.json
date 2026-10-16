@@ -1,5 +1,24 @@
 [
  {
+  "day": 5,
+  "title": "Build: Map Your AI Stack and What Each Piece Costs",
+  "format": "two-host",
+  "guid": "applied-day-005",
+  "publishedAt": "2026-10-16T06:31:38",
+  "audioPath": "/audio/day-005-build-map-your-ai-stack-and-what-each-piece-costs-3257037.mp3",
+  "transcriptPath": "/transcripts/day-005-3257037.txt",
+  "audioBytes": 3257037,
+  "durationSeconds": 271,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 762,
+   "lra": 3.7,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 4,
   "title": "Applied: Your Stack, Mapped in Real-Estate Finance",
   "format": "two-host",
