@@ -1,5 +1,24 @@
 [
  {
+  "day": 6,
+  "title": "Release Radar (Oct 17, 2026)",
+  "format": "two-host",
+  "guid": "applied-day-006",
+  "publishedAt": "2026-10-17T06:32:07",
+  "audioPath": "/audio/day-006-release-radar-oct-17-2026-3347181.mp3",
+  "transcriptPath": "/transcripts/day-006-3347181.txt",
+  "audioBytes": 3347181,
+  "durationSeconds": 278,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 704,
+   "lra": 4.0,
+   "lufs": -16.6,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 5,
   "title": "Build: Map Your AI Stack and What Each Piece Costs",
   "format": "two-host",

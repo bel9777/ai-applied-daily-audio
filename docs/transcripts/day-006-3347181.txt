@@ -1,0 +1,25 @@
+Alex: Anthropic just pushed a massive stability update to Claude Code, targeting Windows and background agents. This is AI Applied.
+Jordan: We are running through what actually shipped this week across the builder ecosystem. Official release notes, changelogs, zero rumors.
+Alex: Starting with that Claude Code release. Version 2.1.302 dropped on October 16th. Jordan, what is in the box?
+Jordan: According to Anthropic's GitHub release notes, it fixes PowerShell plugin command discovery, large image reads over 128 megabytes, and MCP servers negotiating the July 2026 protocol. It also turns fork subagents on by default in several contexts and fixes worktree isolation. 
+Alex: For someone running a Windows setup with scheduled automations, what is the verdict?
+Jordan: Adopt. It directly hits PowerShell, unattended loops, and background subagent tasks. But do not just let it run wild on your workbook automations. Run a quick smoke test first: one PowerShell command, one MCP tool list, and a read-only dry run on a large folder.
+Alex: Next up, Google dropped Gemini 4 Argon into general availability on October 13th. 
+Jordan: Right, the announcement says it targets complex coding, agentic workflows, math, and science. But read the fine print in the migration guidance. It is not on the Free tier or Google AI Pro. It uses implicit context caching, completely ignores sampling parameters like temperature and top-p, and might need long HTTP timeouts.
+Alex: And the pricing jumps soon, right?
+Jordan: The pricing page lists introductory rates through November 30th at two dollars per million input tokens and ten dollars output. Come December 1st, that doubles to four and twenty. So the verdict is Try, not adopt. Do not make this your daily default. Use it for a bounded, heavy refactor, like updating your Gemini API wrapper, and log the costs.
+Alex: Argon also hit GitHub Copilot for Pro Plus, Max, Business, and Enterprise users. The changelog notes it is billed at provider list pricing under usage-based billing. What is the call there?
+Jordan: Watch. If you already have Claude Code and Codex, this is a benchmark and a backup. If you are on an enterprise team, check the admin billing controls before someone racks up a provider-list usage variance on automated tasks.
+Alex: Speaking of GitHub, they pushed AI Scan for pull requests and agentic autofix to general availability on October 15th. 
+Jordan: According to the GitHub changelog, AI Scan finds vulnerabilities in things like shell scripts, Dockerfiles, and Terraform. The findings are strictly advisory and cannot block merges. Meanwhile, agentic autofix lets Copilot explore the codebase and propose a pull request to fix alerts. 
+Alex: Verdict for our stack?
+Jordan: Watch. You do not need it for a single-person setup, but this is the exact audit trail finance teams need. Propose a pilot where the scan comments without blocking, and every agent-generated fix requires human review and a change-ticket link.
+Alex: Over at OpenAI, prompt-to-voice rolled out on October 16th, alongside nine new GPT-Live voices and native Decisions integration.
+Jordan: The API changelog says creating a custom voice from text is free, while generation uses regular Live session billing. The Decisions feature lets apps act while the user is actively speaking. Verdict here is Try. You could prototype a thirty-second automated update for farm pickup instructions or delivery alerts. Just label it synthetic and keep audit logs.
+Alex: Now for our Microsoft 365 Copilot radar. What is moving across the suite?
+Jordan: Looking at the roadmap and rolling status: Copilot in Slack and Teams gained multi-repository support, currently generally available. It lets teams query across codebases and summarize pull requests directly inside chat threads. On the administration side, GitHub announced a new default enablement policy taking effect October 22nd, which turns on eligible generally available features by default unless admins explicitly opt out. 
+Alex: That is a big deal for permissions. Default-on is definitely not the same as approved-for-finance.
+Jordan: Exactly. Keep that segregated.
+Alex: What are we watching for next week?
+Jordan: October 19th brings scheduled deprecations for selected Copilot models. Check your hardcoded model strings so your unattended scripts do not hit silent fallbacks or hard errors on Monday morning.
+Alex: That is the radar for today. We will catch you tomorrow on AI Applied.

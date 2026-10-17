@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 6: Release Radar (Oct 17, 2026)</title>
+      <description>Release Radar (Oct 17, 2026) - AI Applied day 6, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-006</guid>
+      <pubDate>Sat, 17 Oct 2026 06:32:07 +0000</pubDate>
+      <itunes:episode>6</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-006-release-radar-oct-17-2026-3347181.mp3" length="3347181" type="audio/mpeg"/>
+      <itunes:duration>4:38</itunes:duration>
+    </item>
+    <item>
       <title>Day 5: Build: Map Your AI Stack and What Each Piece Costs</title>
       <description>Build: Map Your AI Stack and What Each Piece Costs - AI Applied day 5, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-005</guid>
