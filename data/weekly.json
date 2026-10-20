@@ -1,1 +1,46 @@
-[]
+[
+ {
+  "weekStart": "2026-10-12",
+  "week": 1,
+  "key": "e252332e",
+  "title": "Week 1 (Oct 12–18): Days 1–6",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 1: Lesson 1: Claude Code Today: Models, Modes, and What It Is Best At"
+   },
+   {
+    "start": 286,
+    "title": "Day 2: Lesson 2: Codex and ChatGPT: Where OpenAI's Agents Fit"
+   },
+   {
+    "start": 555,
+    "title": "Day 3: Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line"
+   },
+   {
+    "start": 821,
+    "title": "Day 4: Applied: Your Stack, Mapped in Real-Estate Finance"
+   },
+   {
+    "start": 1088,
+    "title": "Day 5: Build: Map Your AI Stack and What Each Piece Costs"
+   },
+   {
+    "start": 1360,
+    "title": "Day 6: Release Radar (Oct 17, 2026)"
+   }
+  ],
+  "durationSeconds": 1639,
+  "url": "https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-01-2026-10-12-e252332e.mp3",
+  "bytes": 13115974,
+  "publishedAt": "2026-10-17T06:32:07"
+ }
+]

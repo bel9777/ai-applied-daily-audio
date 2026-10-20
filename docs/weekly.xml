@@ -9,6 +9,13 @@
     <itunes:type>episodic</itunes:type>
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
-
+    <item>
+      <title>Week 1 (Oct 12–18): Days 1–6</title>
+      <description>0:00 Day 1: Lesson 1: Claude Code Today: Models, Modes, and What It Is Best At&lt;br/&gt;4:46 Day 2: Lesson 2: Codex and ChatGPT: Where OpenAI&#x27;s Agents Fit&lt;br/&gt;9:15 Day 3: Lesson 3: Gemini and Google AI Studio: Text, Audio, and the Free-vs-Paid Line&lt;br/&gt;13:41 Day 4: Applied: Your Stack, Mapped in Real-Estate Finance&lt;br/&gt;18:08 Day 5: Build: Map Your AI Stack and What Each Piece Costs&lt;br/&gt;22:40 Day 6: Release Radar (Oct 17, 2026)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-12-e252332e</guid>
+      <pubDate>Sat, 17 Oct 2026 06:32:07 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-01-2026-10-12-e252332e.mp3" length="13115974" type="audio/mpeg"/>
+      <itunes:duration>27:19</itunes:duration>
+    </item>
   </channel>
 </rss>
