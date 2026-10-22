@@ -1,0 +1,24 @@
+Alex: Every Friday, you pick what to put in your marketing email and social posts. But you're flying blind on two numbers: how many weeks of stock you actually have left in the freezer, and what each cut earns after direct costs. So you accidentally promote a cut that sells out by Tuesday, or you discount a low-margin item while overstocked cuts just sit there. This is AI Applied.
+Jordan: That inventory disconnect happens constantly when your sales data lives in one place and your cost spreadsheets live in another. Today, we are fixing it with a workflow we call Friday Stock-to-Send.
+Alex: Walk me through the machine. Where does the data start?
+Jordan: It starts on your laptop. You export your store's orders and inventory reports to simple spreadsheet files. You pair those with a price list and a landed-cost sheet you maintain, which tracks processing, packaging, and feed costs per cut.
+Alex: And then we throw an AI at the files?
+Jordan: Absolutely not. Inventory math needs to be bulletproof. A standard Python script runs on your machine Thursday night. It calculates two things for every product: weeks of cover based on recent sales rates, and margin per pound.
+Alex: Pure code. No hallucinations.
+Jordan: Exactly. The script sorts everything into three buckets: cuts to feature because they are overstocked and profitable, cuts to suppress because stock or margin is too low, and neutral. Then it runs a strict reconciliation to make sure the inventory numbers match the raw export. It saves that approved list as a single control file.
+Alex: Okay, so code does the math. Where does the AI actually come in?
+Jordan: Only for drafting copy. We pass that control file to a lightweight model, like Claude Haiku or Gemini Flash. You don't need a giant reasoning model here. It gets the list of approved cuts and a list of banned marketing claims. It writes the email body and three social captions, returning them in clean structured text.
+Alex: But what if the model gets creative and hallucinates a discount, or calls something organic that isn't?
+Jordan: Before anything leaves your machine, a validator checks the text. It's regular code again. It verifies every single product named is on the approved list, every price matches your price sheet to the penny, and zero banned phrases show up. If a check fails, the whole run stops.
+Alex: And if it passes, does it hit send?
+Jordan: Never. The script connects to your email marketing tool just to create a draft. It never touches the scheduling endpoint. At the same time, it emails you an internal review packet showing what got picked, what got suppressed, and the social copy. You log in, review the draft, and click send yourself.
+Alex: Why run this with your computer's built-in task scheduler instead of something like Claude Code's scheduled tasks?
+Jordan: Because your export files live right on your laptop, and desktop scheduled tasks can skip if your computer goes to sleep. Keep the execution local where your existing watchdog script can monitor it. Use Claude Code to write the automation, not to host it.
+Alex: Let's talk failure modes. What if our landed costs change because our processor raised their rates, but we forgot to update the sheet?
+Jordan: The system flags any cost record older than ninety days right inside your review packet. Same goes for the raw inventory exports: if the files are over twenty-four hours old, or rows are missing, the pipeline halts immediately.
+Alex: What about separation of duties? If the marketing platform API key has permission to send emails, how do we know a glitch won't blast a broken draft at midnight?
+Jordan: That is a real limitation of how API keys work. You enforce separation through process. The code literally lacks the schedule command, you include an automated test that fails if that command is ever added, and drafts are the default. The final click is always human.
+Alex: Total running cost for the AI calls?
+Jordan: Under a dollar a month. Pennies, really. The actual cost is about fifteen to eighteen hours of build time.
+Alex: What is the single first step to take this week?
+Jordan: Export last week's order and product spreadsheet files. Use Claude Code to write just the parsing script and the weeks-of-cover math. Then check those calculations by hand for three cuts. Don't touch the drafting model or the email API until your numbers tie out perfectly.

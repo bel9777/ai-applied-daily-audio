@@ -1,5 +1,24 @@
 [
  {
+  "day": 7,
+  "title": "Applied: Your Stack, Mapped at the Farm",
+  "format": "two-host",
+  "guid": "applied-day-007",
+  "publishedAt": "2026-10-22T19:23:41",
+  "audioPath": "/audio/day-007-applied-your-stack-mapped-at-the-farm-3071853.mp3",
+  "transcriptPath": "/transcripts/day-007-3071853.txt",
+  "audioBytes": 3071853,
+  "durationSeconds": 255,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 750,
+   "lra": 3.2,
+   "lufs": -16.5,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 6,
   "title": "Release Radar (Oct 17, 2026)",
   "format": "two-host",
