@@ -20,6 +20,7 @@ Usage:
 import base64
 import io
 import json
+import os
 import re
 import subprocess
 import sys
@@ -42,6 +43,12 @@ try:
     from build import gmail_token, pull_copies, select_days  # noqa: E402
 except ImportError as e:  # hard dependency - never fail soft (f4 lesson)
     sys.exit(f"FATAL: cannot import ai-applied-kindle build.py: {e}")
+
+
+# 2026-10-22: a hidden git credential prompt hung a background run for good
+# (and Task Scheduler then skips the next day). Fail fast instead; the next
+# run pushes whatever is still ahead.
+os.environ["GIT_TERMINAL_PROMPT"] = "0"
 
 
 def _load_key():
@@ -611,7 +618,7 @@ def publish(msg):
         raise RuntimeError(
             f"refusing to push: {len(missing)} advertised enclosure(s) "
             f"missing after rebase, e.g. {missing[:3]}")
-    subprocess.run(["git", "-C", str(REPO), "push", "--quiet"], check=True)
+    subprocess.run(["git", "-C", str(REPO), "push", "--quiet"], check=True, timeout=300)
     return True
 
 
