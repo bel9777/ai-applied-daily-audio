@@ -1,5 +1,24 @@
 [
  {
+  "day": 8,
+  "title": "Build: Route Three Real Tasks to Three Tools and Compare",
+  "format": "two-host",
+  "guid": "applied-day-008",
+  "publishedAt": "2026-10-23T06:32:24",
+  "audioPath": "/audio/day-008-build-route-three-real-tasks-to-three-tools-and-compare-2790477.mp3",
+  "transcriptPath": "/transcripts/day-008-2790477.txt",
+  "audioBytes": 2790477,
+  "durationSeconds": 232,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 667,
+   "lra": 3.9,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 7,
   "title": "Applied: Your Stack, Mapped at the Farm",
   "format": "two-host",

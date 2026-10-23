@@ -1,0 +1,24 @@
+Alex: By the end of today's build, you will have an automated testing harness that sends three distinct jobs to Claude Code, Codex, and Gemini, scores their output objectively, and logs the results to a tracking sheet. This is AI Applied.
+Jordan: We are moving past gut feeling. Today, you put three tools side by side on three real-world problems: a lease reconciliation with strict math, an inventory email with rigid negative constraints, and a small watchdog function in Python.
+Alex: High stakes, clear rules. Where do we begin?
+Jordan: Step one is checking your command-line flags. Before writing the harness, inspect the help pages on your machine for Claude and Codex. Look for the headless switches, JSON formatting, and sandbox flags.
+Alex: That is our first checkpoint. If those flags show up in the terminal help text, you are ready to script. If a vendor changed a flag name, you catch it right now.
+Jordan: Exactly. Step two is setting up your workspace. Make a dedicated directory, set your environment variable for your chosen Gemini model, and drop in the Python script.
+Alex: And before calling any external APIs, we verify the grading logic.
+Jordan: Yes, step three is running a sanity check against the built-in lease data. The finance task looks for rent variances that exceed both five hundred dollars and five percent of the budget. Run the truth check. If you see the exact three leases that violate both rules, your scoring baseline is verified.
+Alex: Once the ground truth works, how do we run the harness?
+Jordan: Run one tool at a time first. Fire off Gemini, then Claude, then Codex. Watch the console print the results as they finish.
+Alex: What should we be seeing on screen?
+Jordan: You should see a clean row for every task showing the tool name, task name, elapsed seconds, a score between zero and one, and either token usage or estimated cost. Claude prints estimated cost, Gemini logs tokens, and Codex shows its run status.
+Alex: And you do not stop at one run.
+Jordan: Never stop at one. Run the full suite three times. A model can get lucky once. Running it three times shows whether it reliably follows JSON constraints and code specs every single time.
+Alex: Let us get into the failure modes. What goes wrong first?
+Jordan: The silent freeze. If a tool hangs and hits your script timeout, it is almost always waiting for human approval in the background. It wants permission to touch a directory or run a command. Make sure your non-interactive flags are set so it fails fast rather than stalling.
+Alex: What about getting a zero score when the answer actually looks fine to a human reader?
+Jordan: That is formatting drift. The model might have added chatty explanations around the JSON or omitted the code fences. Do not weaken your evaluation script to forgive it. If an automation pipeline needs raw data, conversational filler is a genuine failure.
+Alex: And on the API side, watch for error codes. A missing candidate block or a client error usually points to an outdated model identifier, a rate limit, or an overactive content filter.
+Jordan: Right. Check the raw error text saved in your output folder instead of guessing.
+Alex: Once the runs are clean, how do we turn those numbers into an operational decision?
+Jordan: You write a routing memo. Open your scorecard, review the average runtimes and accuracy scores, and map out which tool takes primary ownership for each job type, which tool serves as backup, and where a person reviews the final result.
+Alex: What counts as done today, and what is the single piece of evidence to keep?
+Jordan: Done means all three tools completed all three tasks without interactive prompts and recorded their metrics. The one piece of evidence to keep is that scorecard spreadsheet. Every run appends a timestamped row, giving you proof of model stability whenever an engine updates behind the scenes.

@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 8: Build: Route Three Real Tasks to Three Tools and Compare</title>
+      <description>Build: Route Three Real Tasks to Three Tools and Compare - AI Applied day 8, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-008</guid>
+      <pubDate>Fri, 23 Oct 2026 06:32:24 +0000</pubDate>
+      <itunes:episode>8</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-008-build-route-three-real-tasks-to-three-tools-and-compare-2790477.mp3" length="2790477" type="audio/mpeg"/>
+      <itunes:duration>3:52</itunes:duration>
+    </item>
+    <item>
       <title>Day 7: Applied: Your Stack, Mapped at the Farm</title>
       <description>Applied: Your Stack, Mapped at the Farm - AI Applied day 7, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-007</guid>
