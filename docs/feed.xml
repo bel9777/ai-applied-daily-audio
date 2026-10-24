@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 9: Release Radar (Oct 24, 2026)</title>
+      <description>Release Radar (Oct 24, 2026) - AI Applied day 9, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-009</guid>
+      <pubDate>Sat, 24 Oct 2026 06:32:32 +0000</pubDate>
+      <itunes:episode>9</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-009-release-radar-oct-24-2026-3175533.mp3" length="3175533" type="audio/mpeg"/>
+      <itunes:duration>4:24</itunes:duration>
+    </item>
+    <item>
       <title>Day 8: Build: Route Three Real Tasks to Three Tools and Compare</title>
       <description>Build: Route Three Real Tasks to Three Tools and Compare - AI Applied day 8, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-008</guid>

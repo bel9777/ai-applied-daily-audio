@@ -1,5 +1,24 @@
 [
  {
+  "day": 9,
+  "title": "Release Radar (Oct 24, 2026)",
+  "format": "two-host",
+  "guid": "applied-day-009",
+  "publishedAt": "2026-10-24T06:32:32",
+  "audioPath": "/audio/day-009-release-radar-oct-24-2026-3175533.mp3",
+  "transcriptPath": "/transcripts/day-009-3175533.txt",
+  "audioBytes": 3175533,
+  "durationSeconds": 264,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 728,
+   "lra": 3.4,
+   "lufs": -16.8,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 8,
   "title": "Build: Route Three Real Tasks to Three Tools and Compare",
   "format": "two-host",

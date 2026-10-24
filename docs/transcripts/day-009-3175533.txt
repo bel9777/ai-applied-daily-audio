@@ -1,0 +1,30 @@
+Alex: Breaking changes in Anthropic's API and hard approval gates for your autonomous agents. This is AI Applied.
+Alex: Jordan, it was a quiet week for brand-new frontier models, but under the hood, developers got handed serious operational controls. Where do we kick off?
+Jordan: Let's start with Claude Code. According to Releasebot's tracking of the updates, versions two point one point three zero three through three zero seven shipped this week.
+Alex: What's the practical change there?
+Jordan: Two big things. First, a guided auto-mode setup command reads your project and recent sessions so auto mode actually understands your environment. Second, the changelog added a usage limit wait setting for unattended work. If a scheduled task hits an API rate limit that resets hours later, it gives up immediately instead of idling in silence.
+Alex: That saves your dead-man's-switch watchdog from being left in the dark. What's the verdict?
+Jordan: Adopt. Update your install and configure that limit wait on your scheduled tasks so failed runs fail fast and loud.
+Alex: Next is Claude Mods, which got a crucial update for permission gates.
+Jordan: Huge for governance. The official Claude Code changelog from October nineteenth shows that a mod's tool check can now return a person decider setting.
+Alex: Meaning the model can't just authorize itself?
+Jordan: Exactly. If a real person isn't sitting at the prompt to confirm, the action is refused, and the mod logs your explicit reason. There's also a new read-only flag. An agent can read workbooks all day automatically, but any attempt to touch a ledger folder or write financial uploads halts without a human signing off.
+Alex: That gives you true segregation of duties enforced in code. Verdict?
+Jordan: Adopt. Build a mod that auto-approves read-only actions, demands a human for writes to sensitive folders, and keep the refusal logs ready for your auditors.
+Alex: Now to the core API. Anthropic shipped version twenty-twenty-six ten twenty-one.
+Jordan: Per Releasebot, this release brings updated SDKs, CLI tools, an Apache two license, and explicit breaking changes.
+Alex: Breaking changes mean broken automations if you aren't careful. What should listeners do?
+Jordan: Verdict is try, in a separate branch. The detailed migration guide isn't fully digested yet, so don't guess. If you have Python loops calling Claude over plain HTTP, pin your API version header today. Test one low-stakes loop before upgrading the rest.
+Alex: Moving to new tools, Anthropic also launched Claude Duet as a research preview on October twenty-first. What do we know?
+Jordan: Releasebot describes it as a proactive agent app for Pro and Max accounts. We don't have confirmation yet on what it connects to or how much autonomy it gets.
+Alex: Verdict?
+Jordan: Try, but strictly on personal projects or small side tasks, like drafting an email campaign or weekly schedule. Keep organizational data out until data retention and privacy policies are fully documented.
+Alex: We also saw new open-weight Flash models from DeepSeek, MiniMax, and Qwen, plus a patch for the Gemini CLI. Are those worth our time?
+Jordan: Ignore both. The LLM Gateway timeline lists those cheap models, but your stack already covers high-volume text with Haiku and Gemini Flash without introducing new governance risks. And according to Releasebot, the Gemini CLI patch is just routine reliability fixes.
+Alex: But we did see an important shutdown on the Gemini API side.
+Jordan: Right. According to the Gemini API changelog, the deep research preview agent shut down on October twenty-third. Plus, flash versions three point five and three point seven are now automatically routed to three point six and three point eight. Your scripts will run, but they are hitting models your code didn't declare. Update those model strings.
+Alex: Let's do our Microsoft three sixty-five Copilot update. What moved this week?
+Jordan: It was completely silent. The briefing reported zero updates rolling out, generally available, in preview, or newly added to the roadmap for Microsoft three sixty-five Copilot this week.
+Alex: That keeps things simple on that front. Jordan, what should we watch for next week?
+Jordan: On October twenty-seventh, Gemini Enterprise turns the Gemini four Argon model on by default in the web app, so watch for unexpected behavior changes there, along with Anthropic's full migration breakdown for that breaking API release.
+Alex: That is your radar for the week. We will catch you next time.
