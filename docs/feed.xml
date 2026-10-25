@@ -10,6 +10,24 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 2 (Oct 19–25): Days 7–10</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 7: Applied: Your Stack, Mapped at the Farm&lt;br/&gt;4:17 Day 8: Build: Route Three Real Tasks to Three Tools and Compare&lt;br/&gt;8:11 Day 9: Release Radar (Oct 24, 2026)&lt;br/&gt;12:37 Day 10: Weekly Review: Your Stack, Mapped (Oct 25)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-19-dd34a9c5</guid>
+      <pubDate>Sun, 25 Oct 2026 06:35:58 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-02-2026-10-19-dd34a9c5.mp3" length="8168063" type="audio/mpeg"/>
+      <itunes:duration>0:17:00</itunes:duration>
+    </item>
+    <item>
+      <title>Day 10: Weekly Review: Your Stack, Mapped (Oct 25)</title>
+      <description>Weekly Review: Your Stack, Mapped (Oct 25) - AI Applied day 10, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-010</guid>
+      <pubDate>Sun, 25 Oct 2026 06:34:58 +0000</pubDate>
+      <itunes:episode>10</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-010-weekly-review-your-stack-mapped-oct-25-3161421.mp3" length="3161421" type="audio/mpeg"/>
+      <itunes:duration>4:23</itunes:duration>
+    </item>
+    <item>
       <title>Day 9: Release Radar (Oct 24, 2026)</title>
       <description>Release Radar (Oct 24, 2026) - AI Applied day 9, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-009</guid>

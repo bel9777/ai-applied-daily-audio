@@ -1,5 +1,39 @@
 [
  {
+  "weekStart": "2026-10-19",
+  "week": 2,
+  "key": "dd34a9c5",
+  "title": "Week 2 (Oct 19–25): Days 7–10",
+  "days": [
+   7,
+   8,
+   9,
+   10
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 7: Applied: Your Stack, Mapped at the Farm"
+   },
+   {
+    "start": 257,
+    "title": "Day 8: Build: Route Three Real Tasks to Three Tools and Compare"
+   },
+   {
+    "start": 491,
+    "title": "Day 9: Release Radar (Oct 24, 2026)"
+   },
+   {
+    "start": 757,
+    "title": "Day 10: Weekly Review: Your Stack, Mapped (Oct 25)"
+   }
+  ],
+  "durationSeconds": 1020,
+  "url": "https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-02-2026-10-19-dd34a9c5.mp3",
+  "bytes": 8168063,
+  "publishedAt": "2026-10-25T06:34:58"
+ },
+ {
   "weekStart": "2026-10-12",
   "week": 1,
   "key": "e252332e",

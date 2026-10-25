@@ -1,0 +1,29 @@
+Alex: It is review day. This is AI Applied.
+Jordan: Ten days into the stack, and today we test the map. We have six scenario questions lined up from this week. Alex, you are in the hot seat. Ready?
+Alex: Born ready. Let us see how much stuck.
+Jordan: Question one. It is day three of monthly close. You need to reconcile a rent roll against general ledger lease revenue, and policy treats both files as sensitive institutional data. Do you run it through a local coding tool, a free API script, your personal chat account, or Microsoft Copilot inside your corporate tenant?
+Alex: Copilot inside the tenant. Every single time.
+Jordan: Exactly right. Data boundary comes first, before model power or convenience, and sending institutional records to personal accounts or free tiers breaks that boundary immediately.
+Alex: Next question. Keep them coming.
+Jordan: Question two. In your stack cost map, you have flat monthly subscriptions and metered, pay-per-token API usage. Which one needs a hard cap and an automated spending alert, and why?
+Alex: The metered API. A flat fee stays flat, but an automated script that gets caught in a loop overnight could burn thousands of tokens every minute before anyone notices.
+Jordan: Right on the money. A fixed seat subscription caps your downside by default, but unattended API loops need active guardrails so you do not discover a runaway job on next month's invoice.
+Alex: That would be a painful morning email. What is question three?
+Jordan: At six in the morning, an automated script drafting customer emails starts throwing HTTP four-twenty-nine errors. But your dead-man's-switch watchdog stays green. What happened, and why did the alert fail to fire?
+Alex: Four-twenty-nine means you hit a rate limit or ran out of quota. The watchdog stayed green because it only checks if the process woke up and ran, not whether the API call actually succeeded.
+Jordan: Nailed it. Heartbeat monitors only prove a script is alive, not that it did useful work, which is why failure signals must check actual task output.
+Alex: That is a classic trap. Give me question four.
+Jordan: An automated agent drafts your monthly journal entries, and an auditor asks how that fits internal accounting controls. What is the only answer that satisfies them?
+Alex: That the agent only acts as the preparer. A separate human reviews and approves the entry, and you preserve the input file, the prompt version, the output, and the human sign-off as audit evidence.
+Jordan: Spot on. Segregation of duties applies to software too, meaning the person who built the workflow cannot be the sole approver, and every step needs reproducible documentation.
+Alex: Makes total sense. Two more to go.
+Jordan: Question five. A vendor announces an exciting preview feature that could automate part of your month-end reconciliation. It is rolling out slowly to select accounts. What is your operational move?
+Alex: Test it on dummy data, keep it completely away from live production until it reaches general availability, and log it under IT change management.
+Jordan: Perfect. In change management, preview features have no business touching close-critical workflows until they are stable, documented, and fully supported.
+Alex: Give me the final boss question.
+Jordan: Question six. You have two rules for your coding assistant. One is a formatting preference for clean logging. The other is a hard boundary: never write files to a specific shared network folder. Where should each rule live?
+Alex: The style preference goes into your project instructions file. The hard boundary has to live in a programmatic tool hook.
+Jordan: Clean sweep today. Markdown instructions are just polite suggestions the model can occasionally overlook, but a pre-tool hook is real code that physically intercepts and blocks the action.
+Alex: Six for six. It feels great when the system clicks, but bring it home for us. What is the single biggest takeaway from the whole review?
+Jordan: For every single tool in your stack, write down three things: who owns it, which budget line pays for it, and what exact signal tells you it failed. If you cannot name the failure signal, that tool is not ready to run unattended.
+Alex: If it can fail quietly, it is not automated, it is just neglected. We will see you tomorrow when we dive into live Copilot setups.
