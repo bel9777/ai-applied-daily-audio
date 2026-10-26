@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 11: Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt</title>
+      <description>Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt - AI Applied day 11, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-011</guid>
+      <pubDate>Mon, 26 Oct 2026 06:36:32 +0000</pubDate>
+      <itunes:episode>11</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-011-lab-1-copilot-chat-setup-work-and-web-grounding-the-model-picker-and-a-good-prompt-3295053.mp3" length="3295053" type="audio/mpeg"/>
+      <itunes:duration>4:34</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 2 (Oct 19–25): Days 7–10</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 7: Applied: Your Stack, Mapped at the Farm&lt;br/&gt;4:17 Day 8: Build: Route Three Real Tasks to Three Tools and Compare&lt;br/&gt;8:11 Day 9: Release Radar (Oct 24, 2026)&lt;br/&gt;12:37 Day 10: Weekly Review: Your Stack, Mapped (Oct 25)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-19-dd34a9c5</guid>

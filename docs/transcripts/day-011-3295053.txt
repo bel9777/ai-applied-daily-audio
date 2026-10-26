@@ -1,0 +1,23 @@
+Alex: Drafting monthly variance commentary without letting AI pull in the wrong data or hallucinate numbers can feel like a high-wire act. This is AI Applied, lab 1. Jordan, we are finally getting hands-on with Copilot Chat, but Microsoft just shook up how the interface works, right?
+Jordan: They did. If you opened Chat earlier this year, you probably saw a simple toggle between Work and Web. That is gone. Now there is a Work IQ button sitting right at the top next to a model selector that defaults to Auto.
+Alex: And what does that button actually control?
+Jordan: Think of it like defining your audit population. If Work IQ is turned on, Copilot looks at your internal emails, meetings, and files across Microsoft Graph, plus the open web. Turn it off, and it is locked strictly to public web data and whatever specific file you attach. For licensing, web-grounded chat comes free with your standard work account. Tapping into your internal company data through Work IQ requires the paid Microsoft 365 Copilot license.
+Alex: That makes sense. What about the model picker next to it?
+Jordan: It dictates how hard Copilot thinks, not what it can see. Depending on your organization, you might see labels like Quick response and Think deeper, or specific underlying AI models. You can leave it on Auto most of the time, but you now have a button to regenerate an answer with a deeper model if the first pass misses something subtle.
+Alex: Walk us through the lab setup for today.
+Jordan: You start by creating a simple operating expense table for a fictional company in a Word doc and saving it to your work cloud storage. It has five lines: salaries, warehouse rent, kiosk rent, freight, and software subscriptions.
+Alex: Standard monthly budget versus actuals. What do we do with it in Chat?
+Jordan: First, turn Work IQ off and ask a purely external accounting question, like the conditions for short-term lease exemptions under standard lease rules. You should get external web citations. Then turn Work IQ on, search for your file, and verify it finds it. Next, attach that Word file directly and build a rock-solid prompt.
+Alex: What separates a solid prompt here from just asking it to explain the variances?
+Jordan: Four distinct pillars: goal, context, source, and expectations. You tell it the goal is drafting CFO variance commentary. You give context, like materiality thresholds. You explicitly lock the source by stating: use only this attached file, no web. And you spell out expectations: a table showing variance dollars, percentages, favorable or unfavorable tags, and a flag for potential accounting errors, like an annual software bill that should have been amortized as a prepaid.
+Alex: And then you test model switching.
+Jordan: Exactly. Regenerate that prompt using a deeper reasoning model. Compare the outputs side by side. See if the deeper model catches that the pop-up kiosks might qualify for the short-term lease rule you researched earlier.
+Alex: Now, where does this break down? Where does Copilot get sloppy?
+Jordan: Math and judgement. Copilot is a language engine, not a spreadsheet. You must manually recompute every single variance dollar and percentage. Never publish numbers Copilot calculated without checking them yourself. Also, Copilot can flag a suspicious software charge, but deciding whether to reclassify it as a prepaid is your professional call, not the AI's.
+Alex: Let's do a quick check on the core concepts.
+Jordan: First question: an analyst needs a summary of public lease accounting rules, but she cannot have internal company drafts bleeding into the answer. What should she do?
+Alex: Turn Work IQ off and ask for public citations. That cuts off internal Graph access so she only pulls external web data.
+Jordan: Spot on. Second question: a controller prompts Copilot to summarize quarter three, and it pulls numbers from the completely wrong department project. Does he pick a more powerful model, or change how he scopes the source?
+Alex: Scope the source. A smarter model does not fix a scoping mistake. He needs to attach the exact spreadsheet and explicitly instruct Copilot to use only that file.
+Jordan: Exactly. The model picker changes how it reasons, not what it accesses.
+Alex: That is lab one. Your homework today: take one real variance report in your tenant, run the structured four-part prompt on it, check every number manually, and note how many minutes it shaved off your workflow. Tomorrow, we dive into Copilot Notebooks to lock an entire project to a dedicated set of files.

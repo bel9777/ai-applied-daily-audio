@@ -1,5 +1,24 @@
 [
  {
+  "day": 11,
+  "title": "Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt",
+  "format": "two-host",
+  "guid": "applied-day-011",
+  "publishedAt": "2026-10-26T06:36:32",
+  "audioPath": "/audio/day-011-lab-1-copilot-chat-setup-work-and-web-grounding-the-model-picker-and-a-good-prompt-3295053.mp3",
+  "transcriptPath": "/transcripts/day-011-3295053.txt",
+  "audioBytes": 3295053,
+  "durationSeconds": 274,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 759,
+   "lra": 3.4,
+   "lufs": -16.7,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 10,
   "title": "Weekly Review: Your Stack, Mapped (Oct 25)",
   "format": "two-host",
