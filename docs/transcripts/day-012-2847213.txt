@@ -1,0 +1,21 @@
+Alex: If you have ever wasted half of month-end hunting down the exact version of a budget variance memo someone emailed you three weeks ago, this is AI Applied, lab 2.
+Jordan: Today we are looking at Copilot Notebooks. Think of it like creating a dedicated project binder. Instead of starting a fresh chat every time and re-attaching the same spreadsheets and emails, you build a persistent workspace where Copilot only answers from the specific files you put in front of it.
+Alex: So it is scoped grounding. You are putting strict guardrails on what it can look at.
+Jordan: Exactly. Anyone with a paid Microsoft Copilot license gets it, and even Copilot Chat users get a version of it. It saves your notebook directly in your own SharePoint storage. Lately, Microsoft has added support for pulling Outlook emails directly in as references, along with plain text and markdown notes, plus a toggle to lock the scope strictly to your binder rather than the whole company intranet.
+Alex: Let us walk through the lab. We are using a fictional retail company called Cedar Lane Outfitters to test a quarterly close. What are we setting up?
+Jordan: You make a folder in your cloud drive with three sample files. First is an Excel sheet with six operating expense lines showing budget versus actuals. Second is a close memo setting a strict rule: commentary is only required if a variance is both over twenty-five thousand dollars and over ten percent of budget. Third is an email thread from accounts payable explaining the cost drivers.
+Alex: Then we create the notebook and drop those three files in as references.
+Jordan: Right. Then you add basic instructions telling Copilot to act as an FP and A reviewer, show actual minus budget, cite its sources, and flag conflicts without guessing.
+Alex: And when you ask it to identify which lines need commentary, what does it find?
+Jordan: It should pick out exactly three lines: freight, marketing, and professional fees. If it pulls in payroll or software, it messed up the logic and applied an or rule instead of an and rule.
+Alex: Then we ask it to draft commentary for professional fees using that email thread, and it hits a built-in trap.
+Jordan: It should flag that the close memo lists an audit fee accrual of eighteen thousand dollars, but the AP email claims it is twenty-two thousand. A good answer does not guess which one is right; it leaves that for a human to resolve.
+Alex: And when we test the boundary by asking for the fourth-quarter marketing budget, it tells us that is nowhere in the references.
+Jordan: Which is what you want. But remember the limits. Copilot is an assistant, not an auditor. You still have to recompute the math in your spreadsheet to ensure the percentages match. You click each citation to verify the source file actually says what Copilot claims. And crucially, a person has to pull the actual engagement letter to settle that accrual discrepancy. The AI draft is review input, not audit evidence.
+Alex: Ready for the quick check? Hit me.
+Jordan: First question. A controller needs a persistent workspace for a multi-week close holding memos, workbooks, and emails, so the team can keep coming back with grounded questions. Does she use a Copilot Page, a Notebook, or a one-off Chat?
+Alex: Notebook. A Page is for co-editing text, and a Chat forgets everything once the conversation ends. A Notebook stays put with all those references intact.
+Jordan: Exactly. Second question. An analyst dumps an entire SharePoint library of twelve hundred documents into a notebook, but Copilot keeps missing the one policy that matters. What is the fix?
+Alex: Strip out the bulk folder and attach the specific policy directly. With a paid license, Copilot only grounds on the first three hundred references anyway, so dumping a massive library just blinds it.
+Jordan: That is the rule. More files just dilute the grounding.
+Alex: That is your homework: take three real project files at work, drop them into a Copilot Notebook, test a threshold rule, and see how many minutes it saves you. Tomorrow, we are tackling Claude Code release management on Windows. See you then.

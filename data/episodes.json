@@ -1,5 +1,24 @@
 [
  {
+  "day": 12,
+  "title": "Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers",
+  "format": "two-host",
+  "guid": "applied-day-012",
+  "publishedAt": "2026-10-27T06:37:00",
+  "audioPath": "/audio/day-012-lab-2-copilot-notebooks-one-project-its-files-and-grounded-answers-2847213.mp3",
+  "transcriptPath": "/transcripts/day-012-2847213.txt",
+  "audioBytes": 2847213,
+  "durationSeconds": 237,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 708,
+   "lra": 4.0,
+   "lufs": -17.0,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 11,
   "title": "Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt",
   "format": "two-host",

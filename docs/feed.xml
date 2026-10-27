@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 12: Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers</title>
+      <description>Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers - AI Applied day 12, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-012</guid>
+      <pubDate>Tue, 27 Oct 2026 06:37:00 +0000</pubDate>
+      <itunes:episode>12</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-012-lab-2-copilot-notebooks-one-project-its-files-and-grounded-answers-2847213.mp3" length="2847213" type="audio/mpeg"/>
+      <itunes:duration>3:57</itunes:duration>
+    </item>
+    <item>
       <title>Day 11: Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt</title>
       <description>Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt - AI Applied day 11, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-011</guid>
