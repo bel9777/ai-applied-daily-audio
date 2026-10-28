@@ -1,5 +1,24 @@
 [
  {
+  "day": 13,
+  "title": "Lesson 4: Claude Code Release Management On Windows",
+  "format": "two-host",
+  "guid": "applied-day-013",
+  "publishedAt": "2026-10-28T06:36:04",
+  "audioPath": "/audio/day-013-lesson-4-claude-code-release-management-on-windows-3046797.mp3",
+  "transcriptPath": "/transcripts/day-013-3046797.txt",
+  "audioBytes": 3046797,
+  "durationSeconds": 253,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 725,
+   "lra": 3.7,
+   "lufs": -16.5,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 12,
   "title": "Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers",
   "format": "two-host",

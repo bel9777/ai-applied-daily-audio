@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 13: Lesson 4: Claude Code Release Management On Windows</title>
+      <description>Lesson 4: Claude Code Release Management On Windows - AI Applied day 13, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-013</guid>
+      <pubDate>Wed, 28 Oct 2026 06:36:04 +0000</pubDate>
+      <itunes:episode>13</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-013-lesson-4-claude-code-release-management-on-windows-3046797.mp3" length="3046797" type="audio/mpeg"/>
+      <itunes:duration>4:13</itunes:duration>
+    </item>
+    <item>
       <title>Day 12: Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers</title>
       <description>Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers - AI Applied day 12, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-012</guid>
