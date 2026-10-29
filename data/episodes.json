@@ -1,5 +1,24 @@
 [
  {
+  "day": 14,
+  "title": "Lab 3: Teams Intelligent Recap and Real-Time Catch-Up",
+  "format": "two-host",
+  "guid": "applied-day-014",
+  "publishedAt": "2026-10-29T06:36:07",
+  "audioPath": "/audio/day-014-lab-3-teams-intelligent-recap-and-real-time-catch-up-3040461.mp3",
+  "transcriptPath": "/transcripts/day-014-3040461.txt",
+  "audioBytes": 3040461,
+  "durationSeconds": 253,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 724,
+   "lra": 3.9,
+   "lufs": -16.5,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 13,
   "title": "Lesson 4: Claude Code Release Management On Windows",
   "format": "two-host",

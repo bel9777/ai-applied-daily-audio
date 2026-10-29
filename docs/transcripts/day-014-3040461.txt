@@ -1,0 +1,27 @@
+Alex: If you have ever sprinted into a month-end close review ten minutes late and had to choose between interrupting the room or sitting there completely lost, this tool is your safety net. This is AI Applied, lab 3.
+Jordan: Today is about Teams real-time catch-up and Intelligent Recap. Real-time catch-up is your private assistant inside a live call. Intelligent recap is the post-game analysis with notes, tasks, and timestamps waiting in the recap tab after you hang up.
+Alex: What licenses are we talking about here? Because Teams add-ons can be a maze.
+Jordan: The core recap comes with either Microsoft 365 Copilot or Teams Premium. You do not need both. But specific perks, like custom recap templates or the newer video recap clips, are exclusive to full Copilot. Recently, Microsoft also let you pull past meeting recaps directly into Copilot Notebooks and expanded meeting search across two months of call history.
+Alex: Let us walk through the exercise. What are we setting up?
+Jordan: You schedule a short test call in Teams and turn on transcription. You read a mock freight variance script aloud. The first half covers a large budget overrun, breaking out volume versus rate, and someone proposes an accrual.
+Alex: And that is where I test catching up in the moment?
+Jordan: Exactly. While the call is still running, you open Copilot in the toolbar and ask what you missed, specifically asking for numbers and pending proposals. It scans the live transcript up to that second. Because your question is private, nobody else sees you asking.
+Alex: Then we move to the second half of the script.
+Jordan: Right. You read a second section where the controller steps in, rejects part of the accrual due to an unapproved fuel surcharge, sets the lower final number, and assigns the journal entry with strict sign-off rules. Then you end the call, wait a minute, and open the meeting recap tab.
+Alex: And from there, you generate your close memo?
+Jordan: Yes. You ask Copilot on the recap tab to draft a close-file memo outlining the variance drivers, the final decision, owners, and open items.
+Alex: Now, where does this get dangerous for finance?
+Jordan: Two big danger zones: speaker attribution and math. In the lab, because you read all the roles yourself, Copilot attributes every single line to you. In real calls with bad audio or overlapping talkers, it can credit the wrong person with an approval.
+Alex: And separation of duties is non-negotiable.
+Jordan: Completely. If it says Marcus can post his own journal entry when Priya explicitly said she had to approve it first, that is an audit failure waiting to happen. Also, Copilot loves to tidy things up. It might summarize an open debate about a fuel surcharge as a settled decision.
+Alex: So the rule is you never book an accrual off an AI summary.
+Jordan: Never. Treat it like a draft taken by an intern. You always click the source line in the transcript to confirm the exact dollar amount and who signed off before touching the general ledger.
+Alex: Let us do the quiz.
+Jordan: Question one. A cost analyst joins a budget review fifteen minutes late with transcription running. She wants to see what was decided without interrupting the presenter. What does she do?
+Alex: She opens Copilot right inside the meeting toolbar and asks for a recap of decisions so far. Intelligent recap only works after the call wraps.
+Jordan: Exactly. Copilot in the meeting answers quietly from the running transcript. Question two. The post-meeting recap shows an accrual number that does not match what the controller remembers approving. What should the team do?
+Alex: Go straight to the transcript or timeline, find the exact quote, and have the controller confirm the real number. You never trust the summary blindly or just re-run the prompt hoping for a better answer.
+Jordan: Nailed it. A summary is not audit evidence. Always trace back to the recorded source text.
+Alex: That brings us to homework.
+Jordan: Try this on one real meeting this week. Keep everything inside your work tenant, check the transcript against the AI summary, and note down one thing you had to correct.
+Alex: Tomorrow, we tackle day fifteen: routing three real finance tasks to three different tools and comparing the results.
