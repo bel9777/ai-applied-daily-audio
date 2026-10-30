@@ -1,5 +1,24 @@
 [
  {
+  "day": 15,
+  "title": "Build: Route Three Real Tasks to Three Tools and Compare (Part 2)",
+  "format": "two-host",
+  "guid": "applied-day-015",
+  "publishedAt": "2026-10-30T06:36:41",
+  "audioPath": "/audio/day-015-build-route-three-real-tasks-to-three-tools-and-compare-part-2-3236301.mp3",
+  "transcriptPath": "/transcripts/day-015-3236301.txt",
+  "audioBytes": 3236301,
+  "durationSeconds": 269,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 788,
+   "lra": 3.5,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 14,
   "title": "Lab 3: Teams Intelligent Recap and Real-Time Catch-Up",
   "format": "two-host",
