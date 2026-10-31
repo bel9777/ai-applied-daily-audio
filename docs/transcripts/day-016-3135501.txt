@@ -1,0 +1,24 @@
+Alex: OpenAI just quietly rolled out GPT-6.1 Terra, but the real story this week is all the plumbing that broke underneath our unattended jobs. This is AI Applied.
+Alex: Jordan, we have to start with Google. They changed a pretty critical data retention default without much noise.
+Jordan: According to the Gemini API release notes from October 26, new paid-tier projects using the Generate Content API now store requests by default. Your existing projects are untouched, but any new project you spin up will retain that data unless you explicitly opt out.
+Alex: Which is a change-management headache if you assume the defaults stay consistent. What is our verdict here?
+Jordan: Adopt. In your stack, do not rely on project-level defaults. Explicitly pass the storage flag as false in every single request your Python loops build.
+Alex: Speaking of Gemini, things did not run smoothly later in the week either.
+Jordan: According to the AI Studio status page, an incident on October 30 caused every single request using an API key to fail before it got resolved. An independent monitor also logged nine separate Gemini API outages the day before.
+Alex: If you had background jobs running, they hit a wall. What is the verdict?
+Jordan: Adopt, but treat it as a test. Check your dead-man switches right now to verify they actually flagged any Gemini-dependent jobs that failed silently on October 30. A silent failure monitor is an audit finding waiting to happen.
+Alex: Meanwhile, OpenAI dropped a brand-new model tier. What did they ship?
+Jordan: OpenAI model release notes say GPT-6.1 Terra is rolling out across their API, ChatGPT Work, and Codex. The Codex changelog lists it across paid and enterprise tiers. I could not verify API pricing, so definitely check their pricing page before relying on it.
+Alex: Where does Terra fit into our stack?
+Jordan: Try. Re-run last week's three-task routing comparison with Terra in the OpenAI slot. Keep the exact same inputs and scoring sheet so you get a clean variance comparison.
+Alex: Anthropic also pushed two meaningful bug fixes this week for unattended workflows.
+Jordan: According to the official changelog, Claude Code version 2.1.312 stops retrying requests marked as non-retryable, which used to hang unattended sessions indefinitely. It also compacts sessions over two hundred thousand tokens instead of failing with an error. Separately, the Claude Desktop changelog fixed a Windows bug where deleting a folder could wipe files outside it through junctions or mounted volumes.
+Alex: That Windows bug sounds terrifying if you use synced cloud folders. What is the verdict?
+Jordan: Adopt immediately. Update your installation today, especially if you map cloud drives inside folders Claude touches, and verify your scheduled jobs finish cleanly instead of freezing.
+Alex: Before we jump to Copilot, we also saw several legacy tools get shut down.
+Jordan: The OpenAI release notes confirm legacy models including original GPT-4, 3.5 Turbo, and o1 were shut down on October 23. Also, Gemini 3.7 Flash now silently reroutes requests to 3.8 Flash. Our verdict on both is adopt: remove dead model IDs from your scripts, pin your versions, and log the actual model name returned by the API so silent changes do not slip past you.
+Alex: Let us run through the Microsoft 365 Copilot updates. What is the status of the new features?
+Jordan: These come from Message Center roundups. First, customizable Skills in Copilot Chat are rolling out through mid-November, letting teams deploy reusable, standardized prompts. Projects in Copilot is also rolling out through mid-November, tying chats, tasks, and files into a single collaborative workspace. Pages and Notebooks changes are announced and rolling out, with new Pages saved directly into OneDrive so they follow your organization's retention policies. Finally, advanced Copilot features in SharePoint and OneDrive are generally available, drawing on Copilot Credits.
+Alex: To close us out, what are we watching for next week?
+Jordan: Watch your work tenant to see if Copilot Skills and Projects actually show up in your side panel, watch for a root cause on that Google API outage, and check OpenAI's pricing page for confirmed Terra rates.
+Alex: We will track it all. See you tomorrow.
