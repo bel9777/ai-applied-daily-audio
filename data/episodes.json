@@ -1,5 +1,43 @@
 [
  {
+  "day": 18,
+  "title": "Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy",
+  "format": "two-host",
+  "guid": "applied-day-018",
+  "publishedAt": "2026-11-02T06:35:57",
+  "audioPath": "/audio/day-018-lab-4-copilot-in-excel-plan-first-then-formulas-and-exception-columns-on-a-copy-3093741.mp3",
+  "transcriptPath": "/transcripts/day-018-3093741.txt",
+  "audioBytes": 3093741,
+  "durationSeconds": 257,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 730,
+   "lra": 3.9,
+   "lufs": -16.6,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
+  "day": 17,
+  "title": "Weekly Review: Your Stack, Mapped (Nov 1)",
+  "format": "two-host",
+  "guid": "applied-day-017",
+  "publishedAt": "2026-11-01T06:35:16",
+  "audioPath": "/audio/day-017-weekly-review-your-stack-mapped-nov-1-2965293.mp3",
+  "transcriptPath": "/transcripts/day-017-2965293.txt",
+  "audioBytes": 2965293,
+  "durationSeconds": 247,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 719,
+   "lra": 4.5,
+   "lufs": -16.8,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 16,
   "title": "Release Radar (Oct 31, 2026)",
   "format": "two-host",

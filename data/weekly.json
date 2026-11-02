@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-10-26",
+  "week": 3,
+  "key": "08239d4c",
+  "title": "Week 3 (Oct 26–Nov 1): Days 11–17",
+  "days": [
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 11: Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt"
+   },
+   {
+    "start": 276,
+    "title": "Day 12: Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers"
+   },
+   {
+    "start": 515,
+    "title": "Day 13: Lesson 4: Claude Code Release Management On Windows"
+   },
+   {
+    "start": 770,
+    "title": "Day 14: Lab 3: Teams Intelligent Recap and Real-Time Catch-Up"
+   },
+   {
+    "start": 1025,
+    "title": "Day 15: Build: Route Three Real Tasks to Three Tools and Compare (Part 2)"
+   },
+   {
+    "start": 1296,
+    "title": "Day 16: Release Radar (Oct 31, 2026)"
+   },
+   {
+    "start": 1559,
+    "title": "Day 17: Weekly Review: Your Stack, Mapped (Nov 1)"
+   }
+  ],
+  "durationSeconds": 1805,
+  "url": "https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-03-2026-10-26-08239d4c.mp3",
+  "bytes": 14448017,
+  "publishedAt": "2026-11-01T06:35:16"
+ },
+ {
   "weekStart": "2026-10-19",
   "week": 2,
   "key": "dd34a9c5",

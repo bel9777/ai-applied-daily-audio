@@ -1,0 +1,26 @@
+Alex: It is review day. Time to test what actually stuck from this week. This is AI Applied.
+Jordan: Six questions on the board, rapid-fire style. I ask the scenario, you take your shot, and then I give the official verdict. Ready?
+Alex: Hit me.
+Jordan: First one. You ask Copilot Chat why a lease rent accrual differed from budget. It spits out a super confident answer citing a public news article, completely ignoring your internal reconciliation workbooks. What happened, and what do you fix first?
+Alex: It pulled from the web because the web search toggle was active, or it was not scoped to your work data. You need to scope it strictly to your work files and explicitly name the reconciliation workbook.
+Jordan: You got it. It grabbed public web data instead of grounding on your tenant. That matters because a beautifully written answer from an outside news site is actively dangerous when you need internal accounting facts.
+Jordan: Question two. You are building a Copilot Notebook for the month-end close. What setup gives you the most auditable, repeatable results?
+Alex: Definitely do not dump your entire cloud drive into it. You attach only the specific reference files you need, like the rent roll and prior memos, and write clear custom instructions to cite sources and flag missing data.
+Jordan: Spot on. Specific references plus strict custom instructions give you a defined evidence set. That matters because an auditor cannot review or reproduce an answer if the model was wandering across thousands of unrelated files.
+Jordan: Question three. A coworker missed the monthly variance review. They were not on the original invite, but they have an active Copilot license. Why can they not view the intelligent recap in Teams?
+Alex: Because access to the recap requires being on the meeting invite within the organization. Having the license alone does not bypass meeting membership.
+Jordan: Exactly right. Meeting recap access is bound to the invite list. That matters because meeting recaps follow strict privacy boundaries, and trying to bypass them by forwarding raw transcripts breaks your compliance controls.
+Jordan: Question four, switching to local tools. You configure Claude Code on Windows to use the latest release channel. You run the manual update command, but it reports everything is up to date, even though you know a newer build just dropped. What is going on?
+Alex: The manual update command checks the stable channel by default, while the background auto-updater handles the latest channel.
+Jordan: Nailed it. You have to check your version against the actual channel documentation before assuming the tool is broken. That matters because version drift across team laptops creates phantom bugs that are a nightmare to troubleshoot.
+Jordan: Question five, routing. You have a nightly job that needs to verify orders against delivery confirmation tags and fire an alert if anything mismatches. Do you use Copilot in Excel, Claude Code, or a Python script?
+Alex: That is a Python or Apps Script loop, hands down. Unattended, scheduled jobs do not belong in an interactive chat window.
+Jordan: Absolutely. Scheduled, unattended checks belong on your monitored automation stack. That matters because generative tools are built for ad hoc analysis, not dependable batch processing that runs while you sleep.
+Jordan: Final question. You want Claude Code to propose a full refactor of your reconciliation script, but you do not want it touching a single file until you examine the plan. What mode do you use, and why?
+Alex: You put it in Plan Mode. That keeps the agent read-only while it drafts the architecture.
+Jordan: Correct. Plan Mode keeps it in read-only mode until you approve. That matters because keeping the proposer separate from the approver enforces classic segregation of duties right inside your terminal.
+Alex: Clean sweep. So across all six scenarios, what is the core lesson linking them together?
+Jordan: Here is the single takeaway: for every AI output, you must know where it came from, who can see it, and which version produced it.
+Alex: Source, audience, version.
+Jordan: Exactly. That is the baseline for AI audit evidence. Those three checks are what let a team actually rely on a tool rather than just watching one person tinker with it.
+Alex: We will be back tomorrow diving into Copilot in Excel. See you then.

@@ -10,6 +10,33 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 18: Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy</title>
+      <description>Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy - AI Applied day 18, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-018</guid>
+      <pubDate>Mon, 02 Nov 2026 06:35:57 +0000</pubDate>
+      <itunes:episode>18</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-018-lab-4-copilot-in-excel-plan-first-then-formulas-and-exception-columns-on-a-copy-3093741.mp3" length="3093741" type="audio/mpeg"/>
+      <itunes:duration>4:17</itunes:duration>
+    </item>
+    <item>
+      <title>Full Week 3 (Oct 26–Nov 1): Days 11–17</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 11: Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt&lt;br/&gt;4:36 Day 12: Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers&lt;br/&gt;8:35 Day 13: Lesson 4: Claude Code Release Management On Windows&lt;br/&gt;12:50 Day 14: Lab 3: Teams Intelligent Recap and Real-Time Catch-Up&lt;br/&gt;17:05 Day 15: Build: Route Three Real Tasks to Three Tools and Compare (Part 2)&lt;br/&gt;21:36 Day 16: Release Radar (Oct 31, 2026)&lt;br/&gt;25:59 Day 17: Weekly Review: Your Stack, Mapped (Nov 1)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-26-08239d4c</guid>
+      <pubDate>Sun, 01 Nov 2026 06:36:16 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-03-2026-10-26-08239d4c.mp3" length="14448017" type="audio/mpeg"/>
+      <itunes:duration>0:30:05</itunes:duration>
+    </item>
+    <item>
+      <title>Day 17: Weekly Review: Your Stack, Mapped (Nov 1)</title>
+      <description>Weekly Review: Your Stack, Mapped (Nov 1) - AI Applied day 17, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-017</guid>
+      <pubDate>Sun, 01 Nov 2026 06:35:16 +0000</pubDate>
+      <itunes:episode>17</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-017-weekly-review-your-stack-mapped-nov-1-2965293.mp3" length="2965293" type="audio/mpeg"/>
+      <itunes:duration>4:07</itunes:duration>
+    </item>
+    <item>
       <title>Day 16: Release Radar (Oct 31, 2026)</title>
       <description>Release Radar (Oct 31, 2026) - AI Applied day 16, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-016</guid>
