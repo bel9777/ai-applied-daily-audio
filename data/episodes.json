@@ -1,5 +1,24 @@
 [
  {
+  "day": 19,
+  "title": "Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies",
+  "format": "two-host",
+  "guid": "applied-day-019",
+  "publishedAt": "2026-11-03T06:35:56",
+  "audioPath": "/audio/day-019-lab-5-copilot-in-outlook-catching-up-on-a-busy-week-and-drafting-replies-2910573.mp3",
+  "transcriptPath": "/transcripts/day-019-2910573.txt",
+  "audioBytes": 2910573,
+  "durationSeconds": 242,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 703,
+   "lra": 3.4,
+   "lufs": -16.7,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 18,
   "title": "Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy",
   "format": "two-host",

@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 19: Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies</title>
+      <description>Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies - AI Applied day 19, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-019</guid>
+      <pubDate>Tue, 03 Nov 2026 06:35:56 +0000</pubDate>
+      <itunes:episode>19</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-019-lab-5-copilot-in-outlook-catching-up-on-a-busy-week-and-drafting-replies-2910573.mp3" length="2910573" type="audio/mpeg"/>
+      <itunes:duration>4:02</itunes:duration>
+    </item>
+    <item>
       <title>Day 18: Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy</title>
       <description>Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy - AI Applied day 18, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-018</guid>
