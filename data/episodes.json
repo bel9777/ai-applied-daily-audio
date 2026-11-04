@@ -1,5 +1,24 @@
 [
  {
+  "day": 20,
+  "title": "Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On",
+  "format": "two-host",
+  "guid": "applied-day-020",
+  "publishedAt": "2026-11-04T06:36:22",
+  "audioPath": "/audio/day-020-lesson-5-claude-code-mods-and-fail-closed-hooks-approval-gates-a-controller-will-sign-off-on-3036717.mp3",
+  "transcriptPath": "/transcripts/day-020-3036717.txt",
+  "audioBytes": 3036717,
+  "durationSeconds": 253,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 733,
+   "lra": 3.7,
+   "lufs": -16.2,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 19,
   "title": "Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies",
   "format": "two-host",
