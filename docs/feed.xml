@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 21: Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page</title>
+      <description>Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page - AI Applied day 21, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-021</guid>
+      <pubDate>Thu, 05 Nov 2026 06:36:13 +0000</pubDate>
+      <itunes:episode>21</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-021-lab-6-scheduled-prompts-and-copilot-pages-a-weekly-brief-and-a-shared-status-page-3032973.mp3" length="3032973" type="audio/mpeg"/>
+      <itunes:duration>4:12</itunes:duration>
+    </item>
+    <item>
       <title>Day 20: Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On</title>
       <description>Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On - AI Applied day 20, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-020</guid>

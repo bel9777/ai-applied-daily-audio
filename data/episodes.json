@@ -1,5 +1,24 @@
 [
  {
+  "day": 21,
+  "title": "Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page",
+  "format": "two-host",
+  "guid": "applied-day-021",
+  "publishedAt": "2026-11-05T06:36:13",
+  "audioPath": "/audio/day-021-lab-6-scheduled-prompts-and-copilot-pages-a-weekly-brief-and-a-shared-status-page-3032973.mp3",
+  "transcriptPath": "/transcripts/day-021-3032973.txt",
+  "audioBytes": 3032973,
+  "durationSeconds": 252,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 757,
+   "lra": 3.5,
+   "lufs": -16.5,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 20,
   "title": "Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On",
   "format": "two-host",
