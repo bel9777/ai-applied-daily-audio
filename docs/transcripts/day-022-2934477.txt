@@ -1,0 +1,24 @@
+Alex: By the end of today, you will have an automated testing system running unattended every morning, scoring model outputs against strict pass-fail rules, and logging costs and cryptographic proof into an audit ledger. This is AI Applied.
+Jordan: Last week we eyeballed outputs from different AI tools. But eyeballing does not survive an audit. Today we turn those qualitative impressions into an objective control test.
+Alex: First step is locking down the test population, right?
+Jordan: Exactly. Save your three specific prompts—the rent variance, the email draft, and the log triage—into their own text files in a dedicated cases folder. Freeze them. If you change a prompt later, you treat it like an accounting change: give it a new version number. No editing existing cases.
+Alex: Then we write down the grading rubric.
+Jordan: Yes, a test plan file. You define clear rules for each case: words that must appear, forbidden phrases, maximum word counts, and regular expression patterns. The heavy hitter here is a rule ensuring every number in the output existed in the input. That instantly catches hallucinations.
+Alex: That is huge for variance commentary. If a tool invents a new number, it fails on the spot.
+Jordan: Exactly. Next, you set up the runner script for the Gemini API. It uses standard library tools to send your cases, grab token counts, record latency, and write to a ledger.
+Alex: And it tracks two different cost figures?
+Jordan: Right. API pricing doubles after a scheduled rate change, so the ledger tracks the current cost and the future cost side by side. It also hashes the prompt text with a SHA-256 algorithm and records that hash in the ledger.
+Alex: Why store the hash instead of just saving the prompt text again?
+Jordan: It proves you tested the exact same input without duplicating sensitive text across your records. Anyone can re-hash your case files to confirm the test population never drifted. Plus, the runner updates a tiny heartbeat file only if all three cases succeed. If one fails, the heartbeat goes cold, and your watchdog flags it.
+Alex: Fail closed. So we run that once by hand. What tells us it worked?
+Jordan: You should see an exit status of zero, three generated response files, and three clean rows in your ledger marked OK. If you check the pricing columns, the future price should be exactly double the current one.
+Alex: Once that passes, we drop in the outputs we saved earlier from Copilot, Claude, and ChatGPT, and run the scorer script.
+Jordan: Right. The scorer walks every output folder, checks each file against your test plan, and prints a scorecard table. Here is your checkpoint: expect at least one failure. If every single tool passes every test, your rubric is way too soft.
+Alex: Then the final build step: hand it over to Windows Task Scheduler so it runs before breakfast every day.
+Jordan: Give the scheduler the absolute path to your Python interpreter and your script. That way it runs completely headless with zero prompts.
+Alex: Where does this usually trip people up?
+Jordan: Three common traps. First is hitting free-tier rate limits. If you see HTTP 429 errors in the ledger, you probably tested by hand too many times in one day. Second, Task Scheduler fails silently with a non-zero code. That usually means your API key environment variable was not visible to the background session, or you did not provide the full interpreter path.
+Alex: And the third?
+Jordan: Model deprecation. If you suddenly see HTTP 404 across every case, the provider retired or renamed the model. Because these models update frequently, keep the model name as a configurable setting rather than hardcoding it into the script.
+Alex: What counts as done today, and what is the one piece of evidence to keep?
+Jordan: Done means Task Scheduler triggers the runner, the ledger gets fresh rows, and the heartbeat updates with zero manual touch. The one piece of evidence to keep is your scorecard markdown file. That single table gives you hard, audit-ready proof of which tool actually delivers.

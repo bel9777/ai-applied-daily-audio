@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 22: Build: Route Three Real Tasks to Three Tools and Compare (Part 3)</title>
+      <description>Build: Route Three Real Tasks to Three Tools and Compare (Part 3) - AI Applied day 22, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-022</guid>
+      <pubDate>Fri, 06 Nov 2026 06:36:17 +0000</pubDate>
+      <itunes:episode>22</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-022-build-route-three-real-tasks-to-three-tools-and-compare-part-3-2934477.mp3" length="2934477" type="audio/mpeg"/>
+      <itunes:duration>4:04</itunes:duration>
+    </item>
+    <item>
       <title>Day 21: Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page</title>
       <description>Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page - AI Applied day 21, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-021</guid>

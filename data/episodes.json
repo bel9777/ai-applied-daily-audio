@@ -1,5 +1,24 @@
 [
  {
+  "day": 22,
+  "title": "Build: Route Three Real Tasks to Three Tools and Compare (Part 3)",
+  "format": "two-host",
+  "guid": "applied-day-022",
+  "publishedAt": "2026-11-06T06:36:17",
+  "audioPath": "/audio/day-022-build-route-three-real-tasks-to-three-tools-and-compare-part-3-2934477.mp3",
+  "transcriptPath": "/transcripts/day-022-2934477.txt",
+  "audioBytes": 2934477,
+  "durationSeconds": 244,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 685,
+   "lra": 3.5,
+   "lufs": -17.1,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 21,
   "title": "Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page",
   "format": "two-host",
