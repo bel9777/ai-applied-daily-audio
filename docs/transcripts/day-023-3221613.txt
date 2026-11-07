@@ -1,0 +1,30 @@
+Alex: If your automations rely on Google's voice models, you have a hard deadline coming in ten days. This is AI Applied.
+Jordan: That is the big alert this week. According to Google's Gemini deprecations page, preview text-to-speech models, including Gemini 2.5 Flash Preview TTS, 2.5 Pro Preview TTS, and 3.1 Flash TTS Preview, shut down completely on November 17. The two Live API previews also shut down that exact same day.
+Alex: What replaces them?
+Jordan: You need to migrate to Gemini 3.8 Flash TTS or Flash Lite TTS. Also, according to the Gemini API release notes, Google shipped voice remixing for Gemini 3.8 TTS on November 4, which lets you create and save new voices using plain-language instructions.
+Alex: What is the verdict for our stack?
+Jordan: Adopt, and migrate right away. Search your scripts and loops for preview TTS model strings, update to 3.8, and run a test render before the 17th. You do not want a watchdog script waking you up because an endpoint vanished.
+Alex: Next up, OpenAI pushed an update to their terminal agent.
+Jordan: Shipped on November 6. According to the official Codex changelog, version 0.167.0 adds an agent command center, flags unread results, and introduces inline patch review directly inside approval prompts. Plus, their docs skill now recommends documented replacements when you migrate off deprecated models.
+Alex: The verdict here is try.
+Jordan: Definitely try. Run your update, launch your next Codex task with approvals enabled, and review the diff right inside the prompt before greenlighting changes. It brings that review-before-post discipline straight into the command line.
+Alex: Anthropic took a very different angle this week. A lot of governance plumbing.
+Jordan: Heavy focus on corporate controls. According to the Claude release notes, Enterprise accounts now have beta project tags. You can attach internal cost codes to projects and see spend broken out through the Admin and Analytics APIs.
+Alex: Does it catch everything?
+Jordan: Not yet. Untagged activity lands in an unassigned bucket, and Claude Code on the web is not included.
+Alex: Verdict?
+Jordan: Watch, or try if your organization already runs Claude Enterprise. If you have access, tag a pilot project with an actual chart-of-accounts string and reconcile one month of cost data against your billing invoice. That is the baseline proof a controller will ask for before agreeing to allocate costs.
+Alex: They had security updates too, right?
+Jordan: Yes. The release notes show a new Security Center and Compliance API integrations in beta, plus IP allowlisting on the developer console. The verdict on all of those is watch. If you run jobs from a laptop that hops between home and office networks, IP allowlisting will fail closed at random. Keep it on file for fixed server jobs down the road.
+Alex: OpenAI also refreshed their image generation tools.
+Jordan: Shipped on November 4. According to a release notes summary, ChatGPT Images 2.6 is faster, holds fine detail better during edits, handles GIF creation, and lets you store reference images across chats.
+Alex: Verdict: try. Storing a reusable reference image for packaging or product graphics can save real time on manual touch-ups.
+Jordan: Absolutely.
+Alex: On the flip side, what are we ignoring?
+Jordan: Claude Personal Finance and GPT-6 Cyber. Both shipped under restricted access, according to reporting from Notebookcheck and TechCrunch. Linking consumer bank accounts through Plaid and specialized red-team cyber tools have no place in your production ledgers. Ignore both.
+Alex: Time for our Microsoft 365 Copilot segment. What shipped there?
+Jordan: Nothing confirmed this week. Reviewing the official roadmap and release trackers turned up zero new items rolling out or reaching general availability over the last two weeks.
+Alex: How should someone prepping for the AB-730 certification use the gap?
+Jordan: Treat the quiet week as exam practice. Go to the Microsoft 365 roadmap, filter to Copilot, and pick three items across in development, rolling out, and launched. Map each one back to core exam domains like Chat, Pages, or agents. Telling those release statuses apart is a tested skill.
+Alex: What are we watching for next week?
+Jordan: Beat the November 17 Gemini cutoff before the weekend, look out for Microsoft's mid-month Copilot roundup, and watch reports on Anthropic's roadshow timeline in case subscription terms shift.
