@@ -10,6 +10,14 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Week 4 (Nov 2–8): Days 18–24</title>
+      <description>0:00 Day 18: Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy&lt;br/&gt;4:19 Day 19: Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies&lt;br/&gt;8:23 Day 20: Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On&lt;br/&gt;12:38 Day 21: Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page&lt;br/&gt;16:52 Day 22: Build: Route Three Real Tasks to Three Tools and Compare (Part 3)&lt;br/&gt;20:58 Day 23: Release Radar (Nov 7, 2026)&lt;br/&gt;25:28 Day 24: Weekly Review: Your Stack, Mapped (Nov 8)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-02-9f5778d8</guid>
+      <pubDate>Sun, 08 Nov 2026 06:34:59 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-04-2026-11-02-9f5778d8.mp3" length="14299279" type="audio/mpeg"/>
+      <itunes:duration>29:47</itunes:duration>
+    </item>
+    <item>
       <title>Week 3 (Oct 26–Nov 1): Days 11–17</title>
       <description>0:00 Day 11: Lab 1: Copilot Chat Setup: Work and Web Grounding, the Model Picker, and a Good Prompt&lt;br/&gt;4:36 Day 12: Lab 2: Copilot Notebooks: One Project, Its Files, and Grounded Answers&lt;br/&gt;8:35 Day 13: Lesson 4: Claude Code Release Management On Windows&lt;br/&gt;12:50 Day 14: Lab 3: Teams Intelligent Recap and Real-Time Catch-Up&lt;br/&gt;17:05 Day 15: Build: Route Three Real Tasks to Three Tools and Compare (Part 2)&lt;br/&gt;21:36 Day 16: Release Radar (Oct 31, 2026)&lt;br/&gt;25:59 Day 17: Weekly Review: Your Stack, Mapped (Nov 1)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-26-08239d4c</guid>

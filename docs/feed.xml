@@ -10,6 +10,24 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 4 (Nov 2–8): Days 18–24</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 18: Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy&lt;br/&gt;4:19 Day 19: Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies&lt;br/&gt;8:23 Day 20: Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On&lt;br/&gt;12:38 Day 21: Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page&lt;br/&gt;16:52 Day 22: Build: Route Three Real Tasks to Three Tools and Compare (Part 3)&lt;br/&gt;20:58 Day 23: Release Radar (Nov 7, 2026)&lt;br/&gt;25:28 Day 24: Weekly Review: Your Stack, Mapped (Nov 8)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-02-9f5778d8</guid>
+      <pubDate>Sun, 08 Nov 2026 06:35:59 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-04-2026-11-02-9f5778d8.mp3" length="14299279" type="audio/mpeg"/>
+      <itunes:duration>0:29:47</itunes:duration>
+    </item>
+    <item>
+      <title>Day 24: Weekly Review: Your Stack, Mapped (Nov 8)</title>
+      <description>Weekly Review: Your Stack, Mapped (Nov 8) - AI Applied day 24, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-024</guid>
+      <pubDate>Sun, 08 Nov 2026 06:34:59 +0000</pubDate>
+      <itunes:episode>24</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-024-weekly-review-your-stack-mapped-nov-8-3113613.mp3" length="3113613" type="audio/mpeg"/>
+      <itunes:duration>4:19</itunes:duration>
+    </item>
+    <item>
       <title>Day 23: Release Radar (Nov 7, 2026)</title>
       <description>Release Radar (Nov 7, 2026) - AI Applied day 23, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-023</guid>

@@ -1,0 +1,28 @@
+Alex: It is review day. This is AI Applied.
+Jordan: Time to test what actually stuck from week four. Six questions, rapid fire. You game?
+Alex: Fire away. I have been waiting for this.
+Jordan: Question one. You are reconciling a hundred and forty leases against general ledger postings in Excel. You ask Copilot to flag discrepancies, and it offers to drop a formula column straight into the shared month-end workbook while your accounting lead is working in it. What is your move?
+Alex: Do not let it touch that file. Make a copy of the workbook first, demand that Copilot explain its logic and steps before applying anything, and write the output into a new variance column rather than altering source data.
+Jordan: Exactly right. That gives you a clean review trail for audit and keeps the source data intact.
+Alex: Rule number one: never experiment on the live production file. What is next?
+Jordan: Question two. You built a PreToolUse hook in Claude Code to block writes to an upload folder unless an approval file is present. In testing, the hook throws an unhandled Python traceback, but the file write goes through anyway. What went wrong?
+Alex: It failed open. A standard crash returns an error code, but Claude Code specifically looks for exit code two to block an action. Since it crashed instead of cleanly exiting with a two, Claude assumed it was a non-blocking error and let the write happen.
+Jordan: Spot on. You have to wrap the hook logic in an exception handler that defaults to exit code two, because a broken safety gate cannot just swing open.
+Alex: Fail closed, always. Hit me with number three.
+Jordan: Question three. You have a messy forty-message email thread with a property manager about reconciliations. You need to know what is outstanding and reply. What is the safe sequence?
+Alex: Let Copilot summarize the thread, but you manually verify every dollar figure and date against the original attachments. Then have it draft a response, edit the draft yourself, and send it yourself.
+Jordan: Correct. Summaries easily hallucinate or drop small numbers, so you never let the draft go out without checking the source documents.
+Alex: Never sign off on math you did not cross-check. Question four.
+Jordan: You set up a scheduled prompt that runs every Monday to summarize emails and files about your capital portfolio. You want to paste that summary into a shared Copilot Page for three analysts. What is the single biggest security risk?
+Alex: Over-sharing confidential data. The prompt runs using my personal access credentials, but the Page is visible to anyone on the team. If the prompt pulls in a private HR thread or executive memo, pasting it exposes that info to everyone.
+Jordan: Right on the money. Automated briefs inherit your clearance, so you must scrub them before sharing the output with people who have lower access.
+Alex: Makes total sense. What is number five?
+Jordan: A quick routing round. Tell me which tool gets each job: Copilot in Excel, Claude Code, or an unattended Python script. Job one: a one-off check on why utility expenses spiked eighteen percent in an open file. Job two: a nightly orders sync that writes a delivery route file. Job three: updating twenty code files to use a unified logging module.
+Alex: Easy. The one-off check stays right in Copilot in Excel. The nightly sync goes to the unattended Python script with an alert monitor. And updating twenty files across a repository is Claude Code with step-by-step approvals.
+Jordan: Three for three. Ad hoc analysis stays in the document, scheduled unattended tasks go to Python, and multi-file code refactors belong in Claude Code with a human at the gate.
+Alex: Give me the final question.
+Jordan: Question six. A new feature appears in Friday release notes marked as preview, and leadership wants to use it immediately in a SOX-compliant workflow. What is your call?
+Alex: The default answer is not yet. Preview features can be modified or pulled with zero notice, and their support terms do not match general availability. You test it on test data, never in a live control environment.
+Jordan: Exactly. Until it is generally available, it stays outside the official compliance boundary.
+Alex: And that brings us right to the core takeaway from this entire week.
+Jordan: A tool is ready for the close only when you can show the plan, the copy, and the gate. If you cannot show all three, it stays a personal productivity experiment.
