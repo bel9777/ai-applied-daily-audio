@@ -1,5 +1,24 @@
 [
  {
+  "day": 25,
+  "title": "Lab 7: Save, Share, and Refine: Building a Personal Prompt Library",
+  "format": "two-host",
+  "guid": "applied-day-025",
+  "publishedAt": "2026-11-09T06:35:57",
+  "audioPath": "/audio/day-025-lab-7-save-share-and-refine-building-a-personal-prompt-library-3168621.mp3",
+  "transcriptPath": "/transcripts/day-025-3168621.txt",
+  "audioBytes": 3168621,
+  "durationSeconds": 264,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 779,
+   "lra": 3.8,
+   "lufs": -16.9,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 24,
   "title": "Weekly Review: Your Stack, Mapped (Nov 8)",
   "format": "two-host",

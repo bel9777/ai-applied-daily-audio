@@ -1,0 +1,23 @@
+Alex: If you are tired of retyping the exact same month-end variance prompt every single close, this is AI Applied, lab 7.
+Jordan: Today we are talking about Prompt Gallery. It lets you save your vetted prompts into a personal library and share them directly with your team. You do not need an add-on or preview license; a standard Microsoft 365 Copilot license covers it. It is generally available, and recently Microsoft expanded the gallery right into Copilot within OneDrive. Think of it like building a shared macro library, but in plain English.
+Alex: How does saving actually work under the hood? Does it store the numbers I ran it on?
+Jordan: No, and that is rule number one. A saved prompt only stores the instruction text. It never stores the data, the source file, or the response. When your teammate runs your saved prompt, Copilot runs it against their files and their permissions. That means you save the recipe, not the meal.
+Alex: Which brings us to the lab. We start with a messy operating expense table for a retail ops team.
+Jordan: Right. You take a fictional budget table with lines like salaries, temp labor, rent, and freight, plus a short notes column explaining what happened. First, you run a weak, generic prompt asking to summarize the variances. 
+Alex: And Copilot does what it usually does when you are vague: it rambles.
+Jordan: It rambles, it flips positive and negative signs, it flags minor budget lines just because the percentage moved, and it starts hallucinating explanations that were never in your source notes. 
+Alex: So we refine it. We tell it the exact math: actual minus budget, specify that positive means an overspend, and set a hard policy rule. In this lab, it only flags lines where the dollar variance is at least five thousand AND the percentage variance is at least ten percent.
+Jordan: Plus, we strictly tell it to use only the note column for explanations, capped at twenty-five words, and output everything into a clean table. When you run that, only three lines get flagged: temp labor, freight-in, and marketing. Software and utilities drop off because they failed the dual threshold.
+Alex: Once the output is airtight, we turn it into a template. We strip out the specific month and figures, replace them with bracketed placeholders like period and cost center, and test that template in a completely fresh chat.
+Jordan: If the fresh chat produces identical results, you hover over your prompt, click save, and give it a versioned prefix so it is searchable. Then you can share a link or push it to a shared Teams team. 
+Alex: Where do people get burned here? What are the failure modes?
+Jordan: The biggest trap is failing to specify an AND condition. Copilot will default to an OR test and swamp your review with tiny lines. The second risk is ungrounded commentary. If a cost center manager leaves the note blank and Copilot invents a reason, that commentary will fail an internal audit. You control this by recalculating the math yourself and verifying every driver against the source.
+Alex: And you probably should not publish a prompt to the whole department without someone else testing it.
+Jordan: Exactly. Treat a team prompt like a financial model. Segregation of duties applies here. Have a peer run your template before you share it to your Teams workspace. Remember, IT admins can export all saved and shared prompts via PowerShell, so a shared prompt is an auditable record. 
+Alex: Good to know. Time for a quick check. 
+Jordan: Question one: An analyst built a rock-solid accrual commentary prompt and wants to run it next month without retyping it. Does she pin the chat, build an agent, or save it to Prompt Gallery?
+Alex: Save it to Prompt Gallery. An agent is complete overkill for a repeatable monthly prompt, and pinning a chat leaves old, stale numbers sitting in the window.
+Jordan: Exactly right. Second question: Copilot's variance summary flags lines that fall well below your dollar threshold. Do you keep hitting regenerate, edit the bad rows out by hand, or refine the prompt?
+Alex: Refine the prompt. Spell out the threshold as a strict AND condition and rerun it. Regenerating is just rolling dice, and editing it by hand leaves the prompt broken for next month.
+Jordan: Spot on. Fix the root cause so the template is dependable. For homework, pick one recurring prompt you type every month, run it through the critique loop until it passes scrutiny, and save it with a version tag.
+Alex: Tomorrow, we tackle memory, custom instructions, and managing your chat history.
