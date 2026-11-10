@@ -1,0 +1,25 @@
+Alex: If you are tired of retyping your house style every time you ask for variance commentary, this is AI Applied, lab 8.
+Jordan: We are tackling memory, custom instructions, and managing your chat history in Microsoft Copilot. First, quick housekeeping on names: Microsoft dropped the 365 from the app name, so it is just Microsoft Copilot now, and the web portal is moving over to a new cloud address. 
+Alex: Good to know. Do we need an upgraded tier for this?
+Jordan: Everything we are doing today works on the standard Microsoft 365 Copilot license. The only catch is administrative. Your IT team has a tenant-level switch called Enhanced personalization. If they turned it off, your toggles will be greyed out.
+Alex: And if they are off, you are stuck copying and pasting your prompt block every morning like we did in earlier labs.
+Jordan: Exactly. But if they are on, think of Copilot like an accounting close binder. Custom instructions are your standing policy memo. Saved memories are your baseline assumptions. And your chats are individual workpapers. Just like in real life, shredding a workpaper does not change the policy memo.
+Alex: That is a clean distinction. Walk us through the lab setup.
+Jordan: Picture a quick budget versus actual table for a trail supply company: five lines covering revenue, cost of goods sold, freight, payroll, and software. Before you paste that in, you head to settings, find the personalization panel, and add your custom instructions. You tell it you work in FP and A, you want values in thousands to one decimal, variances labeled favorable or unfavorable based on profit impact, and you want an items to verify list at the end. Most importantly: tell it never to invent variance drivers, and to write driver unknown if it does not know.
+Alex: Then we add a memory on top of that?
+Jordan: Right. In a fresh chat, you explicitly tell it to remember a rule: only write commentary for lines where the variance is both over ten thousand dollars and over five percent of budget. Copilot will confirm the memory was updated.
+Alex: Now we drop in the numbers and see if it listens to both.
+Jordan: Exactly. When you ask for the analysis, you should see your formatting rules kick in automatically. And looking at the numbers, revenue is down sixty-eight thousand, which is over five percent, and freight is over budget by thirteen thousand, which is twenty-seven percent. So only those two lines should get commentary. 
+Alex: What about cost of goods sold? That was nineteen thousand favorable, but only under three percent.
+Jordan: And that brings us straight to the failure modes. Copilot loves to treat and as or. If it wrote commentary for cost of goods sold, it saw the dollar amount and ignored the percentage rule. That is your classic memory-applied-loosely error. The other big test is whether it invented an excuse for freight. If it blamed fuel surcharges without you providing that data, it ignored your rule to say driver unknown.
+Alex: Never let Copilot guess why a variance happened. And once we get a clean run, we rename the chat so auditors can trace it, right?
+Jordan: Exactly. Rename it with the month and entity. Then, as a test, delete the chat where you told it the threshold rule. Open a brand-new chat and ask what it remembers about the company.
+Alex: And it still knows the threshold!
+Jordan: It still knows it. Deleting a chat only deletes the workpaper. To kill an outdated rule, you must go into settings and delete the memory itself.
+Alex: Let us hit the quick check. Hit me with the questions.
+Jordan: First one: an analyst wants every response formatted in thousands with favorable or unfavorable labels without retyping the instruction. What should she set?
+Alex: Custom instructions in the personalization settings. That sets the standing policy across all chats.
+Jordan: Spot on. Second one: a controller deleted the chat where he set last quarter's materiality threshold, but Copilot is still applying it to new analyses. How does he fix it?
+Alex: He has to go into settings, open personalization, and delete that specific saved memory. Deleting the chat does nothing to saved memories.
+Jordan: Exactly right. 
+Alex: For homework today, set your team's standard formatting in custom instructions, test it on a single variance report at work, and rename the chat for easy retrieval. Tomorrow, we are jumping into Day 27 to look at running scripted calls using the Gemini CLI. See you then.

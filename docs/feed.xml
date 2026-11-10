@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 26: Lab 8: Memory, Custom Instructions, and Managing Your Chats</title>
+      <description>Lab 8: Memory, Custom Instructions, and Managing Your Chats - AI Applied day 26, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-026</guid>
+      <pubDate>Tue, 10 Nov 2026 06:36:06 +0000</pubDate>
+      <itunes:episode>26</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-026-lab-8-memory-custom-instructions-and-managing-your-chats-3207213.mp3" length="3207213" type="audio/mpeg"/>
+      <itunes:duration>4:27</itunes:duration>
+    </item>
+    <item>
       <title>Day 25: Lab 7: Save, Share, and Refine: Building a Personal Prompt Library</title>
       <description>Lab 7: Save, Share, and Refine: Building a Personal Prompt Library - AI Applied day 25, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-025</guid>

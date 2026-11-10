@@ -1,5 +1,24 @@
 [
  {
+  "day": 26,
+  "title": "Lab 8: Memory, Custom Instructions, and Managing Your Chats",
+  "format": "two-host",
+  "guid": "applied-day-026",
+  "publishedAt": "2026-11-10T06:36:06",
+  "audioPath": "/audio/day-026-lab-8-memory-custom-instructions-and-managing-your-chats-3207213.mp3",
+  "transcriptPath": "/transcripts/day-026-3207213.txt",
+  "audioBytes": 3207213,
+  "durationSeconds": 267,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 761,
+   "lra": 3.3,
+   "lufs": -16.8,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 25,
   "title": "Lab 7: Save, Share, and Refine: Building a Personal Prompt Library",
   "format": "two-host",
