@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 27: Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs</title>
+      <description>Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs - AI Applied day 27, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-027</guid>
+      <pubDate>Wed, 11 Nov 2026 06:36:12 +0000</pubDate>
+      <itunes:episode>27</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-027-lesson-6-gemini-api-cli-scripted-gemini-calls-for-claude-code-and-unattended-jobs-3026637.mp3" length="3026637" type="audio/mpeg"/>
+      <itunes:duration>4:12</itunes:duration>
+    </item>
+    <item>
       <title>Day 26: Lab 8: Memory, Custom Instructions, and Managing Your Chats</title>
       <description>Lab 8: Memory, Custom Instructions, and Managing Your Chats - AI Applied day 26, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-026</guid>

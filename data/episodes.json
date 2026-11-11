@@ -1,5 +1,24 @@
 [
  {
+  "day": 27,
+  "title": "Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs",
+  "format": "two-host",
+  "guid": "applied-day-027",
+  "publishedAt": "2026-11-11T06:36:12",
+  "audioPath": "/audio/day-027-lesson-6-gemini-api-cli-scripted-gemini-calls-for-claude-code-and-unattended-jobs-3026637.mp3",
+  "transcriptPath": "/transcripts/day-027-3026637.txt",
+  "audioBytes": 3026637,
+  "durationSeconds": 252,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 699,
+   "lra": 3.7,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 26,
   "title": "Lab 8: Memory, Custom Instructions, and Managing Your Chats",
   "format": "two-host",
