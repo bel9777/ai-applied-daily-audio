@@ -1,5 +1,24 @@
 [
  {
+  "day": 28,
+  "title": "Lab 9: Referencing the Right Sources: Files, People, Meetings, and Connectors",
+  "format": "two-host",
+  "guid": "applied-day-028",
+  "publishedAt": "2026-11-12T06:36:15",
+  "audioPath": "/audio/day-028-lab-9-referencing-the-right-sources-files-people-meetings-and-connectors-3123693.mp3",
+  "transcriptPath": "/transcripts/day-028-3123693.txt",
+  "audioBytes": 3123693,
+  "durationSeconds": 260,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 755,
+   "lra": 3.6,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 27,
   "title": "Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs",
   "format": "two-host",

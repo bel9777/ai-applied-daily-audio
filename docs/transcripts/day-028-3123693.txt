@@ -1,0 +1,24 @@
+Alex: Writing month-end variance commentary without Copilot quietly pulling numbers from a stale draft buried in SharePoint is the dream. This is AI Applied, lab 9. So Jordan, how do we force it to look at only what we tell it to?
+Jordan: It comes down to a single character: the forward slash. In the Copilot chat box, or inside Word, Excel, and Teams, typing a slash opens a picker. You can anchor your prompt directly to an exact spreadsheet, a memo, a meeting, or even a specific colleague.
+Alex: Which keeps it from wandering off across the entire corporate intranet.
+Jordan: Exactly. A prompt that names its sources gives you a draft you can actually audit. Feature-wise, this just needs your standard Microsoft 365 Copilot add-on license. One big change recently: the old Work and Web tabs are gone. Now there is a single toggle called Work IQ in the corner. When it is on, Copilot sees your internal data plus the web. Turn it off, and it only sees what you explicitly attach.
+Alex: What about data living outside Microsoft, like Salesforce or ServiceNow?
+Jordan: That is where connectors come in, and they do not cost anything extra if you have the Copilot license. Admins govern them. Synced connectors copy third-party data into the Microsoft index, while federated connectors pull live data on the fly without indexing anything.
+Alex: Got it. Now walk us through today's lab. We built a little fictional world for this, right?
+Jordan: Right, a mock retailer called Cedar Ridge Outfitters. You set up three quick items in your tenant: an Excel lease schedule with variances, a Word memo explaining some rent adjustments, and a short Outlook calendar event with a couple of lease accounting decisions and owners.
+Alex: Then we run a baseline prompt, just asking Copilot in Chat to explain the rent variance, and see what happens.
+Jordan: And typically, it gives a generic summary because it has to guess which files matter. In the next step, you start a clean chat, type slash, choose the lease workbook, type slash again to add the memo, and ask for a line-by-line commentary and any conflicts between them.
+Alex: Then we layer in the meeting.
+Jordan: Exactly. Reference the calendar invite with another slash. Now the draft pulls in who owns the item and the specific accounting treatment agreed upon during the call. You can even slash-reference your own name to see everything you touched on that project this week.
+Alex: And when we toggle that Work IQ button off and ask again?
+Jordan: It goes blind. It cannot see your files unless you manually upload them. That is a great way to verify where the security boundary sits.
+Alex: Where does this feature trip people up, though? If people see citations, they might assume the math is done.
+Jordan: Two major checkpoints. First is math: recalculate the line items and verify the net variance ties out completely. Second is source conflicts. In our lab data, the memo says rent escalated by three percent, but the spreadsheet shows a five percent jump. A good prompt surfaces that discrepancy, but Copilot will not resolve it for you. An accountant still has to settle the conflict.
+Alex: So keep the prompt, the cited files, and your review notes together for the audit trail. Ready for the quick check?
+Jordan: Let's do it. Question one: A controller wants Copilot's quarter-end rent commentary to draw only on an approved lease schedule and the close meeting, not older drafts. What should she do?
+Alex: Don't write a longer prompt begging it to be careful. Type a slash in the prompt box and explicitly point to that schedule and that calendar invite.
+Jordan: Exactly. The slash command narrows retrieval to only the items you pick. Question two: FP&A wants Copilot to query vendor contracts sitting in another platform, but company policy says that data cannot be copied into Microsoft's index. Which connector fits?
+Alex: A federated connector. It queries the data live instead of syncing copies into Microsoft Graph.
+Jordan: Right on. Synced indexes it; federated leaves the data in place.
+Alex: That brings us to your homework: pick one variance you are drafting this week, pull in the schedule, the memo, and the close meeting using the slash command, and check your source settings to see which connectors your company allows.
+Jordan: Tomorrow, we wrap up by routing three real tasks across three different tools to see how they stack up against each other.
