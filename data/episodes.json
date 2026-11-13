@@ -1,5 +1,24 @@
 [
  {
+  "day": 29,
+  "title": "Build: Route Three Real Tasks to Three Tools and Compare (Part 4)",
+  "format": "two-host",
+  "guid": "applied-day-029",
+  "publishedAt": "2026-11-13T06:36:43",
+  "audioPath": "/audio/day-029-build-route-three-real-tasks-to-three-tools-and-compare-part-4-2913741.mp3",
+  "transcriptPath": "/transcripts/day-029-2913741.txt",
+  "audioBytes": 2913741,
+  "durationSeconds": 242,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 726,
+   "lra": 3.2,
+   "lufs": -17.0,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 28,
   "title": "Lab 9: Referencing the Right Sources: Files, People, Meetings, and Connectors",
   "format": "two-host",

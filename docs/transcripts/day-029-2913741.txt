@@ -1,0 +1,24 @@
+Alex: By the end of today, you will have an automated scorecard running three real-world tasks across three different AI tools every week, logging costs, pass rates, and model versions to a clean audit trail. This is AI Applied.
+Jordan: Last week was about building the router and testing the vibe. But gut feel doesn't hold up when you're reviewing automated workflows. Finance teams want controls they can re-perform with clear, repeatable evidence. That's what we're building today.
+Alex: So instead of ad-hoc prompts, we start with a fixed test set.
+Jordan: Exactly. A golden reference file with three tasks and known answers. One calculates rent variance, one extracts order details like delivery days and totals, and one drafts an email with strict compliance limits on forbidden words and length. You do the math by hand first, so you have an established ground truth.
+Alex: And once those three test cases exist, how do the tools get graded?
+Jordan: We use a lightweight Python harness that talks directly to Claude Code in headless mode, Codex in non-interactive mode, and the Gemini API. Before running it, drop your Gemini token rates into your environment variables so the script can tally cost down to the fraction of a cent.
+Alex: Then we run the script by hand.
+Jordan: Right. It hits every tool with every prompt, parses the output, and scores it against our rules.
+Alex: What's the checkpoint telling us that the first pass worked?
+Jordan: You should see nine lines print out across your console, each showing the task, the tool, and whether it passed. Then look in your project folder. You'll find a fresh CSV file with a header and nine rows detailing run times, model versions, and cost. If you run the report flag, you'll see a clean summary showing passing fractions out of one.
+Alex: Nine runs, all automated. But we don't want to trigger this manually every week.
+Jordan: No, so you wire it into Windows Task Scheduler to run early Sunday morning using the background Python executable. Since Claude is set to a single turn and Codex is in a read-only sandbox, neither tool pauses for permission prompts. If anything tries to interact, it logs a denial and keeps moving.
+Alex: And to make sure it actually ran while we were sleeping?
+Jordan: Two checkpoints. First, trigger the task manually from the command line once. Your CSV should immediately double in size with nine fresh rows and a new timestamp. Second, the script drops a timestamp into a heartbeat text file. Point your watchdog to monitor that heartbeat with an eight-day window.
+Alex: Let's talk about what breaks. What's the most common trap when people set this up?
+Jordan: It runs fine when you type it out, but fails completely on the schedule. If your CSV starts showing file-not-found or JSON decode errors only during scheduled runs, your task is running under an account that can't find your command-line tools on the system path, or isn't logged in. Run the task under your active user account.
+Alex: What if a run hangs or throws a timeout?
+Jordan: That usually means a model tried to trigger an interactive tool, or Codex balked at a folder permission. Don't widen your permissions to fix it. Just tighten your prompt. Remind the model explicitly to return raw JSON and avoid tools.
+Alex: What if the model gets the math right, but the scorecard fails it anyway?
+Jordan: Say your rent variance was negative eighteen fifty, but the model outputs accounting parentheses instead of a minus sign. It got the math, but broke the contract. Whatever you do, don't loosen your checker to accommodate it. Fix the prompt. In an automated control, loosening the checker means hiding format drift that will break downstream imports later on.
+Alex: That's a huge distinction. The checker is the control.
+Jordan: Always.
+Alex: So what counts as done today, and what's the one piece of evidence we're holding onto?
+Jordan: You're done when your scheduled task completes nine unattended runs across all three tools, updates your heartbeat file, and appends to the log. The one piece of evidence to keep is that scorecard CSV. It proves your control ran, tracks your spend, and ties every single pass or fail back to the exact version of the model that produced it.
