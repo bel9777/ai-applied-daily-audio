@@ -1,0 +1,24 @@
+Alex: Anthropic just dropped new flagship models, but your audio automation might completely fail on Tuesday if you don't update it right now. This is AI Applied.
+Jordan: That is not an exaggeration.
+Alex: Let's start right there with the deadline. What is breaking early next week?
+Jordan: According to Google's Gemini deprecations page, they are shutting down their preview text-to-speech models on November seventeenth. If your background jobs call the old flash preview or pro preview TTS models, those endpoints will stop responding entirely.
+Alex: What is the replacement, and what is our verdict?
+Jordan: The verdict is adopt, and do it this weekend. Google says the replacements are Gemini three-point-eight flash TTS or the flash-lite version. Search your Python scripts, change the model name to the new flash TTS model, and run a test call before Tuesday so your error monitors don't catch it the hard way.
+Alex: Next up, the big release from Anthropic. Claude Fable five-point-two and Claude Mythos five-point-two.
+Jordan: Anthropic's announcements page describes both as their most capable models yet for difficult technical work, specifically pointing to coding and finance. Fable is their standard general-use release with safeguards, while Mythos is the restricted-access model that often requires approval through a cyber-verification program.
+Alex: Are we updating our prompts and agent backends today?
+Jordan: The verdict is try. Anthropic hasn't confirmed pricing or plan availability in the documentation yet. Take one hard job where you already know the exact right numbers, like a complex lease reconciliation script. Run it in Claude Code on Fable five-point-two, compare the result and the token cost against your current default, and only then decide if it deserves to be your new baseline.
+Alex: Speaking of Claude, we saw updates to Claude Code and Claude Desktop that sneak in some serious governance controls. What shipped?
+Jordan: Per the Claude Code and Desktop changelogs, scheduled cloud tasks will now actively warn you if they pick up connectors you didn't ask for. Claude Code also prompts you before a tool call sends your account email address across the network, and the built-in browser limits client certificates to managed hosts.
+Alex: That sounds like an internal auditor finally got a say in the agent design.
+Jordan: Exactly. The verdict is adopt. Update the tools and review your scheduled tasks. When an agent quietly inherits new network permissions, that violates least-privilege principles, so having those explicit warnings is a massive win for compliance.
+Alex: On the developer side, Codex CLI pushed versions zero-one-six-seven and one-six-eight. Worth updating?
+Jordan: The Codex changelog highlights a new command center for tracking background tasks, provider selection, and new command rules that require fresh human approval before executing. The verdict is try. Fire up the command center while running two parallel jobs and see if those fresh-approval gates fit into your approval workflow.
+Alex: Before we hit Copilot, we have to talk about that massive Microsoft outage on November twelfth. Teams, Outlook, and Copilot were essentially dark for a day across dozens of countries.
+Jordan: A report quoting Microsoft's official statement said an earlier network capacity upgrade caused the downtime, not a cyberattack. But when Exchange and SharePoint stalled, every Graph-based agent and third-party connector stalled with them.
+Alex: So what is the verdict on an outage?
+Jordan: Adopt the architectural lesson. Add explicit error handling to any automation that touches your inbox or document libraries. If SharePoint is down during month-end close, your job needs to fail loudly with an alert instead of posting a half-finished reconciliation.
+Alex: That is a painful lesson to learn in production. Now, let's run through our Microsoft 365 Copilot briefing. Jordan, give us the quick status checks.
+Jordan: First, fair-use limits on Copilot Chat for unlicensed users are currently rolling out, so expect throttling if team members use chat without a paid license. Second, Authoritative Content and agent usage reports became generally available on November fourth, allowing admins to mark up to one hundred SharePoint sites as official sources for search grounding. Third, Skills in Copilot Chat are rolling out now, which brings reusable prompt instructions right into the chat interface. Finally, on the roadmap, App Builder retires on November thirtieth, shifting workflow creation into Copilot Studio and Cowork.
+Alex: What should we watch for next week?
+Jordan: Watch your monitoring dashboards on Wednesday morning to make sure your Gemini TTS calls didn't crash, and keep an eye out for Microsoft's post-incident report to see what they say about agent recovery.
