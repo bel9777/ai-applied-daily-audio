@@ -1,0 +1,26 @@
+Alex: It is review day, everyone. Pencils down. This is AI Applied.
+Jordan: All week we focused on making your daily AI work repeatable and reviewable. Today, we have a six-question blitz covering the stack. Alex, you are in the hot seat.
+Alex: Hit me. I am ready.
+Jordan: Question one. Your accounting team writes variance commentary every month-end. You built a prompt that hits your house format cleanly. You want the whole team using it by next week with the least amount of setup. Do you paste it into a shared document, save it to the prompt library, or build a custom agent?
+Alex: Save it to the prompt library and share it. Building an agent is way too much overhead for one prompt.
+Jordan: Exactly right. The prompt library gives the team immediate standardization without the maintenance burden of an agent before you actually need one.
+Jordan: Question two. For two weeks, Copilot answers rent reconciliation questions assuming your fiscal year starts in January. It actually starts in July. You did not mention January today. Where do you look first?
+Alex: Check Copilot's saved memory and custom instructions inside the personalization settings.
+Jordan: Spot on. Persistent bad assumptions almost always hide in your saved personalization settings, so clearing that out and explicitly setting July first stops phantom context from bleeding into new chats.
+Jordan: Question three. You ask Copilot what you agreed to in yesterday's true-up meeting and whether it matches your reconciliation workbook. The answer comes back vague and cites an old file. What two adjustments fix that?
+Alex: Point directly to the exact file and the specific meeting using the slash menu, and verify the meeting actually had transcription turned on.
+Jordan: Clean sweep so far. Explicit references stop the system from guessing with general search, and a transcript ensures it has real meeting substance rather than an empty calendar invite.
+Jordan: Question four. You wrote a script calling an external language model API. It runs cleanly every time in your terminal. But under your system task scheduler before dawn, it throws an authentication error. What is your first check?
+Alex: Check the environment variables for the user account running the scheduled task. The terminal has the API key loaded, but the background task might not.
+Jordan: Right on the money. Background service accounts do not inherit your personal shell profile, meaning your script cannot see the API key unless you configure it explicitly for that environment.
+Jordan: Question five. A vendor announcement says a new feature is rolling out over coming weeks that could replace one of your custom automated scripts. What must you confirm before you delete your script?
+Alex: Make sure the feature actually reached your specific tenant, test your edge cases, and run both side-by-side for a cycle.
+Jordan: Exactly. Announced does not mean shipped, and an operational team never scraps a reliable automated control until the replacement survives real production conditions.
+Jordan: Last one. Question six. You use an AI assistant for two separate jobs, like agricultural marketing and corporate lease accounting. A draft memo on lease accounting suddenly mentions pasture-raised pork. What is the structural fix?
+Alex: Split them into separate projects or isolated workspaces so they do not share the same memory pool. Just hitting backspace on the sentence fixes nothing long term.
+Jordan: That is six for six. One shared memory pool will inevitably contaminate unrelated work, which is why boundary controls like dedicated projects are non-negotiable.
+Alex: Not a bad run. So Jordan, what is the single biggest lesson our listeners should take into the weekend?
+Jordan: Fix your inputs before you judge your output.
+Alex: Say more about that.
+Jordan: If you leave a prompt open-ended, point to vague folders, or let background tasks guess your environment, you introduce risk. When you explicitly name the file, lock down the prompt, and scope the memory, you get an answer you can trace and trust every single time. That is the difference between playing with a toy and running a real workflow.
+Alex: Input discipline beats prompt magic every single time. That wraps up review day. Have a great weekend, everyone. We will see you back here on Monday.

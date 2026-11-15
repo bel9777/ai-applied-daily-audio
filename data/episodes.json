@@ -1,5 +1,24 @@
 [
  {
+  "day": 31,
+  "title": "Weekly Review: Your Stack, Mapped (Nov 15)",
+  "format": "two-host",
+  "guid": "applied-day-031",
+  "publishedAt": "2026-11-15T06:35:09",
+  "audioPath": "/audio/day-031-weekly-review-your-stack-mapped-nov-15-3071853.mp3",
+  "transcriptPath": "/transcripts/day-031-3071853.txt",
+  "audioBytes": 3071853,
+  "durationSeconds": 255,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 701,
+   "lra": 4.7,
+   "lufs": -16.9,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 30,
   "title": "Release Radar (Nov 14, 2026)",
   "format": "two-host",

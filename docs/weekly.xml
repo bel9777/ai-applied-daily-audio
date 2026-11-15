@@ -10,6 +10,14 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Week 5 (Nov 9–15): Days 25–31</title>
+      <description>0:00 Day 25: Lab 7: Save, Share, and Refine: Building a Personal Prompt Library&lt;br/&gt;4:26 Day 26: Lab 8: Memory, Custom Instructions, and Managing Your Chats&lt;br/&gt;8:54 Day 27: Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs&lt;br/&gt;13:08 Day 28: Lab 9: Referencing the Right Sources: Files, People, Meetings, and Connectors&lt;br/&gt;17:30 Day 29: Build: Route Three Real Tasks to Three Tools and Compare (Part 4)&lt;br/&gt;21:34 Day 30: Release Radar (Nov 14, 2026)&lt;br/&gt;26:25 Day 31: Weekly Review: Your Stack, Mapped (Nov 15)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-09-de1a074e</guid>
+      <pubDate>Sun, 15 Nov 2026 06:35:09 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-05-2026-11-09-de1a074e.mp3" length="14732195" type="audio/mpeg"/>
+      <itunes:duration>30:41</itunes:duration>
+    </item>
+    <item>
       <title>Week 4 (Nov 2–8): Days 18–24</title>
       <description>0:00 Day 18: Lab 4: Copilot in Excel: Plan First, Then Formulas and Exception Columns on a Copy&lt;br/&gt;4:19 Day 19: Lab 5: Copilot in Outlook: Catching Up on a Busy Week and Drafting Replies&lt;br/&gt;8:23 Day 20: Lesson 5: Claude Code Mods and Fail-Closed Hooks: Approval Gates a Controller Will Sign Off On&lt;br/&gt;12:38 Day 21: Lab 6: Scheduled Prompts and Copilot Pages: A Weekly Brief and a Shared Status Page&lt;br/&gt;16:52 Day 22: Build: Route Three Real Tasks to Three Tools and Compare (Part 3)&lt;br/&gt;20:58 Day 23: Release Radar (Nov 7, 2026)&lt;br/&gt;25:28 Day 24: Weekly Review: Your Stack, Mapped (Nov 8)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-11-02-9f5778d8</guid>

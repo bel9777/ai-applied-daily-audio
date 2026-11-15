@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-11-09",
+  "week": 5,
+  "key": "de1a074e",
+  "title": "Week 5 (Nov 9–15): Days 25–31",
+  "days": [
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 25: Lab 7: Save, Share, and Refine: Building a Personal Prompt Library"
+   },
+   {
+    "start": 266,
+    "title": "Day 26: Lab 8: Memory, Custom Instructions, and Managing Your Chats"
+   },
+   {
+    "start": 534,
+    "title": "Day 27: Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs"
+   },
+   {
+    "start": 788,
+    "title": "Day 28: Lab 9: Referencing the Right Sources: Files, People, Meetings, and Connectors"
+   },
+   {
+    "start": 1050,
+    "title": "Day 29: Build: Route Three Real Tasks to Three Tools and Compare (Part 4)"
+   },
+   {
+    "start": 1294,
+    "title": "Day 30: Release Radar (Nov 14, 2026)"
+   },
+   {
+    "start": 1585,
+    "title": "Day 31: Weekly Review: Your Stack, Mapped (Nov 15)"
+   }
+  ],
+  "durationSeconds": 1841,
+  "url": "https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-05-2026-11-09-de1a074e.mp3",
+  "bytes": 14732195,
+  "publishedAt": "2026-11-15T06:35:09"
+ },
+ {
   "weekStart": "2026-11-02",
   "week": 4,
   "key": "9f5778d8",
