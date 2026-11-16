@@ -1,5 +1,24 @@
 [
  {
+  "day": 32,
+  "title": "Lab 10: Researcher: A Sourced Memo for a Real Decision",
+  "format": "two-host",
+  "guid": "applied-day-032",
+  "publishedAt": "2026-11-16T06:36:29",
+  "audioPath": "/audio/day-032-lab-10-researcher-a-sourced-memo-for-a-real-decision-2956941.mp3",
+  "transcriptPath": "/transcripts/day-032-2956941.txt",
+  "audioBytes": 2956941,
+  "durationSeconds": 246,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 678,
+   "lra": 3.8,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 31,
   "title": "Weekly Review: Your Stack, Mapped (Nov 15)",
   "format": "two-host",

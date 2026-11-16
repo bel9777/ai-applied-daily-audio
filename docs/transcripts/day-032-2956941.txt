@@ -1,0 +1,21 @@
+Alex: When you have to turn a messy folder of lease proposals, a coworker's napkin math, and an accounting standard into an executive memo, Microsoft Copilot's Researcher agent does the heavy lifting. This is AI Applied, lab 10.
+Jordan: Researcher is basically a digital junior analyst. Instead of giving an instant reply, it pauses, plans, browses your files, checks the web, and drafts a cited report. It is generally available with your standard Copilot business license, tucked under Agents in the main Copilot app.
+Alex: Though Microsoft unpinned it recently, right?
+Jordan: Exactly. If you do not see it in your sidebar, just hit All Agents and search for it. And keep in mind, if your tenant admin disabled web search, it can only see internal files.
+Alex: Good flag. So in today's lab, we are building a real lease-versus-flex decision memo for a fictional company called Brightwater Analytics. Walk us through the setup.
+Jordan: You drop two simple docs into OneDrive. One is an options sheet comparing a five-year Denver office renewal with a two-year flex-space setup. The other is a short note from operations claiming flex space saves fifty-six thousand dollars a year and thirty desks is plenty.
+Alex: Classic quick email estimate. Then what?
+Jordan: Open Researcher, type a slash to point directly at both documents, and ask for a two-page memo for the CFO. Tell it to verify that cost savings claim, calculate the five-year cash cost, check whether thirty desks handles peak attendance, and hit the web for authoritative accounting guidance on whether the flex space qualifies as a lease under ASC 842.
+Alex: Does it just spit out the memo?
+Jordan: It might ask you a clarifying question first, like who the exact audience is or if you want a discount rate applied. Once you answer, it builds a structured report with inline citations to both docs and accounting sources. Then, ask it for a claims ledger: a neat table showing every single number, where it came from, and the formula if it was calculated.
+Alex: Now here is where we have to be finance professionals, because AI math can be tricky. What breaks?
+Jordan: Two massive catches. First, that ops email claimed fifty-six thousand in savings, but that person completely forgot about four months of free rent in the renewal contract. When you do the real annual math, flex only saves about forty-two and a half thousand. If Researcher just repeats the fifty-six thousand figure without catching that discrepancy, the memo fails.
+Alex: And the desks?
+Jordan: Fifty-two employees with seventy-two percent peak attendance means you need thirty-eight desks, not thirty. If nobody catches that, twenty percent of the team is sitting on the floor on peak days.
+Alex: And a citation just means a source exists, not that the math is right or the conclusion holds up. You still need the controller to review the lease accounting treatment.
+Jordan: Spot on. Always treat the output as a draft until human eyes verify the ledger. Time for our quick check. First scenario: you need a recommendation memo pulling from vendor emails, a contract on SharePoint, and live public market benchmarks. Do you reach for Copilot Chat, Excel, Analyst, or Researcher?
+Alex: Researcher, easily. Multi-step synthesis across internal files and the live web with citations is its exact sweet spot.
+Jordan: Nailed it. Second one: Researcher finishes a capex memo and cites every single sentence. Can you fire it off to the CFO immediately?
+Alex: Definitely not. You click the citations to confirm they actually say what the memo claims, you re-run the calculations yourself, and you have the budget owner sign off. Citations prove lineage, not truth.
+Jordan: Exactly right. Never trust citations blind. For homework, run this exact workflow on one real decision sitting on your desk. Point Researcher at your files, demand the claims ledger, and see if your manual math matches its output.
+Alex: Tomorrow, we tackle the Analyst agent to see how Copilot digs into messy data exports and whether its reasoning holds water. See you then.

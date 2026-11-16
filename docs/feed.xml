@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 32: Lab 10: Researcher: A Sourced Memo for a Real Decision</title>
+      <description>Lab 10: Researcher: A Sourced Memo for a Real Decision - AI Applied day 32, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-032</guid>
+      <pubDate>Mon, 16 Nov 2026 06:36:29 +0000</pubDate>
+      <itunes:episode>32</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-032-lab-10-researcher-a-sourced-memo-for-a-real-decision-2956941.mp3" length="2956941" type="audio/mpeg"/>
+      <itunes:duration>4:06</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 5 (Nov 9–15): Days 25–31</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 25: Lab 7: Save, Share, and Refine: Building a Personal Prompt Library&lt;br/&gt;4:26 Day 26: Lab 8: Memory, Custom Instructions, and Managing Your Chats&lt;br/&gt;8:54 Day 27: Lesson 6: Gemini API CLI: Scripted Gemini Calls for Claude Code and Unattended Jobs&lt;br/&gt;13:08 Day 28: Lab 9: Referencing the Right Sources: Files, People, Meetings, and Connectors&lt;br/&gt;17:30 Day 29: Build: Route Three Real Tasks to Three Tools and Compare (Part 4)&lt;br/&gt;21:34 Day 30: Release Radar (Nov 14, 2026)&lt;br/&gt;26:25 Day 31: Weekly Review: Your Stack, Mapped (Nov 15)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-11-09-de1a074e</guid>
