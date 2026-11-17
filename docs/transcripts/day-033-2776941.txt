@@ -1,0 +1,23 @@
+Alex: If you've ever stared at a messy general ledger export at month-end and wished someone else would hunt down the duplicate charges and missing budget lines, this is AI Applied, lab 11.
+Jordan: Today we are digging into Analyst. It's a built-in agent right inside Copilot Chat, included with your standard Copilot license, and running entirely inside your organization's data protection boundary.
+Alex: And Microsoft recently simplified the branding, dropping the three-six-five across their adoption materials. What else changed lately?
+Jordan: The most recent update added scheduled prompts for agents, so you can set recurring data jobs. But under the hood, the core engine is what matters. Think of Analyst as a junior numbers person who writes and runs Python code for you in a secure sandbox.
+Alex: Which means it's running actual code on your files, not just predicting words. How does today's lab put that through its paces?
+Jordan: You set up a simple thirteen-row operating expense export for a fictional company. Inside that file, we plant three deliberate traps: a duplicated repairs invoice in August, a negative repair bill in September that looks like a credit memo, and a blank travel budget.
+Alex: The classic garbage data every finance team deals with.
+Jordan: Exactly. Step one is having Analyst profile the file before it does any math. You ask for row counts, data types, raw totals, and any anomalies, and you tell it to show the code without fixing anything yet. It should immediately flag all three traps.
+Alex: And instead of letting it guess how to clean them up, you take the wheel.
+Jordan: Right. You explicitly define the rules: drop the duplicate row, treat the negative number as a credit memo, and fill the missing travel budget based on prior months. Only after it locks in those assumptions do you tell it to calculate variances by account and chart the monthly utility trend.
+Alex: And you can actually inspect the Python code to confirm it dropped the duplicate and didn't accidentally flip the negative sign on that credit memo.
+Jordan: That's your primary control. Finally, you ask it for close commentary, but with a strict rule: label every calculated number as verified, and tag any causal explanation as needing external support.
+Alex: Because the spreadsheet shows what happened, not why.
+Jordan: Precisely. If Analyst writes that utilities spiked because of a rate increase or weather, it's guessing. The data only has dollar amounts. A human has to check whether that duplicate was an actual double billing or two separate shipments, and whether the operational story is backed by invoices.
+Alex: So the rule is simple: treat the code as a workpaper, verify the logic, and tie out the numbers independently in Excel using standard formulas.
+Jordan: Exactly. Ready for a quick check?
+Alex: Fire away.
+Jordan: First up. A controller has a five-thousand-row CSV of vendor transactions and wants monthly trends and a chart. Do they use Researcher or Analyst?
+Alex: Analyst, all day. Researcher is for synthesizing web articles and internal prose into a report. Analyst is built for crunching numbers, running code, and graphing data files.
+Jordan: Nailed it. Second one: Analyst reports that a cost center is twelve thousand dollars over budget. What's the right way to validate that before putting it into the close commentary? Regenerate the response, or ask Copilot if it's confident?
+Alex: Neither! You never ask an AI if it's sure of itself. You inspect the assumptions and the Python code it ran, then independently tie the figure back to the raw source data in Excel.
+Jordan: Spot on. Never ask the model to grade its own homework. That brings us to your assignment for today: take one raw data export in your own tenant, run these profiling and variance steps, and verify the math with an independent tie-out before signing off.
+Alex: Tomorrow, we tackle voice pipeline maintenance and how to migrate off retiring Gemini TTS previews onto Gemini 3.8. See you then!

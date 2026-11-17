@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 33: Lab 11: Analyst: Exploring a Data Export and Checking Its Reasoning</title>
+      <description>Lab 11: Analyst: Exploring a Data Export and Checking Its Reasoning - AI Applied day 33, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-033</guid>
+      <pubDate>Tue, 17 Nov 2026 06:36:01 +0000</pubDate>
+      <itunes:episode>33</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-033-lab-11-analyst-exploring-a-data-export-and-checking-its-reasoning-2776941.mp3" length="2776941" type="audio/mpeg"/>
+      <itunes:duration>3:51</itunes:duration>
+    </item>
+    <item>
       <title>Day 32: Lab 10: Researcher: A Sourced Memo for a Real Decision</title>
       <description>Lab 10: Researcher: A Sourced Memo for a Real Decision - AI Applied day 32, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-032</guid>

@@ -1,5 +1,24 @@
 [
  {
+  "day": 33,
+  "title": "Lab 11: Analyst: Exploring a Data Export and Checking Its Reasoning",
+  "format": "two-host",
+  "guid": "applied-day-033",
+  "publishedAt": "2026-11-17T06:36:01",
+  "audioPath": "/audio/day-033-lab-11-analyst-exploring-a-data-export-and-checking-its-reasoning-2776941.mp3",
+  "transcriptPath": "/transcripts/day-033-2776941.txt",
+  "audioBytes": 2776941,
+  "durationSeconds": 231,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 667,
+   "lra": 4.1,
+   "lufs": -16.2,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 32,
   "title": "Lab 10: Researcher: A Sourced Memo for a Real Decision",
   "format": "two-host",
