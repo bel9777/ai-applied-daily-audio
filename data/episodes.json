@@ -1,5 +1,24 @@
 [
  {
+  "day": 34,
+  "title": "Lesson 7: Migrating Gemini TTS to Gemini 3.8 Before the November 17 Shutdown",
+  "format": "two-host",
+  "guid": "applied-day-034",
+  "publishedAt": "2026-11-18T06:36:30",
+  "audioPath": "/audio/day-034-lesson-7-migrating-gemini-tts-to-gemini-3-8-before-the-november-17-shutdown-3224781.mp3",
+  "transcriptPath": "/transcripts/day-034-3224781.txt",
+  "audioBytes": 3224781,
+  "durationSeconds": 268,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 763,
+   "lra": 3.9,
+   "lufs": -16.7,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 33,
   "title": "Lab 11: Analyst: Exploring a Data Export and Checking Its Reasoning",
   "format": "two-host",
