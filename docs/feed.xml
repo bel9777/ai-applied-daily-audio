@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 35: Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience</title>
+      <description>Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience - AI Applied day 35, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-035</guid>
+      <pubDate>Thu, 19 Nov 2026 06:35:43 +0000</pubDate>
+      <itunes:episode>35</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-035-lab-12-copilot-in-word-drafting-from-source-files-and-rewriting-for-an-audience-2978541.mp3" length="2978541" type="audio/mpeg"/>
+      <itunes:duration>4:08</itunes:duration>
+    </item>
+    <item>
       <title>Day 34: Lesson 7: Migrating Gemini TTS to Gemini 3.8 Before the November 17 Shutdown</title>
       <description>Lesson 7: Migrating Gemini TTS to Gemini 3.8 Before the November 17 Shutdown - AI Applied day 34, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-034</guid>

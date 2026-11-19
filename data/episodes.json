@@ -1,5 +1,24 @@
 [
  {
+  "day": 35,
+  "title": "Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience",
+  "format": "two-host",
+  "guid": "applied-day-035",
+  "publishedAt": "2026-11-19T06:35:43",
+  "audioPath": "/audio/day-035-lab-12-copilot-in-word-drafting-from-source-files-and-rewriting-for-an-audience-2978541.mp3",
+  "transcriptPath": "/transcripts/day-035-2978541.txt",
+  "audioBytes": 2978541,
+  "durationSeconds": 248,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 688,
+   "lra": 3.3,
+   "lufs": -16.5,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 34,
   "title": "Lesson 7: Migrating Gemini TTS to Gemini 3.8 Before the November 17 Shutdown",
   "format": "two-host",
