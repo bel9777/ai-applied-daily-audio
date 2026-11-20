@@ -1,5 +1,24 @@
 [
  {
+  "day": 36,
+  "title": "Build: Route Three Real Tasks to Three Tools and Compare (Part 5)",
+  "format": "two-host",
+  "guid": "applied-day-036",
+  "publishedAt": "2026-11-20T06:36:34",
+  "audioPath": "/audio/day-036-build-route-three-real-tasks-to-three-tools-and-compare-part-5-3314637.mp3",
+  "transcriptPath": "/transcripts/day-036-3314637.txt",
+  "audioBytes": 3314637,
+  "durationSeconds": 276,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 809,
+   "lra": 3.6,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 35,
   "title": "Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience",
   "format": "two-host",

@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 36: Build: Route Three Real Tasks to Three Tools and Compare (Part 5)</title>
+      <description>Build: Route Three Real Tasks to Three Tools and Compare (Part 5) - AI Applied day 36, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-036</guid>
+      <pubDate>Fri, 20 Nov 2026 06:36:34 +0000</pubDate>
+      <itunes:episode>36</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-036-build-route-three-real-tasks-to-three-tools-and-compare-part-5-3314637.mp3" length="3314637" type="audio/mpeg"/>
+      <itunes:duration>4:36</itunes:duration>
+    </item>
+    <item>
       <title>Day 35: Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience</title>
       <description>Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience - AI Applied day 35, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">applied-day-035</guid>

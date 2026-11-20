@@ -1,0 +1,28 @@
+Alex: By the end of today's build, you will have an automated weekly regression test that runs three different AI tools headless, grades their work against known answers, and writes the results to an audit-ready ledger. This is AI Applied.
+Jordan: Last week, we routed three real tasks to three different tools and compared them once by hand. But models change constantly. A single comparison only tells you what happened on that specific day. Today, we turn that check into a scheduled regression suite.
+Alex: And before we touch the pipeline, there is a quick cleanup note from earlier lessons.
+Jordan: Right. The older Gemini voice preview shut down recently. If any of your routes still point to it, that task will show up as a failed row today. Make sure your API calls use the stable model ID straight from the official documentation.
+Alex: Got it. So step one of the build is putting our synthetic fixtures in place.
+Jordan: Exactly. We create three small files in a dedicated test folder: a couple of simple rent records, a lease move-in scenario for proration math, and a short product note. Using fake data with a known correct answer keeps real information out of third-party tools and gives us an objective pass or fail every single time.
+Alex: And if someone uses Microsoft Copilot as one of their three tools?
+Jordan: Copilot does not have a clean headless path here, so you score that one by hand each week. It takes about two minutes to drop an entry into the ledger manually.
+Alex: Fair enough. Step two is saving the main Python script. What is that script doing under the hood?
+Jordan: It triggers Claude Code and Codex through their command line interfaces in non-interactive mode. We pass strict flags to lock down permissions, set read-only sandboxes, and cap spend at a quarter. For the third route, it hits the Gemini API directly over HTTP.
+Alex: And then it measures the outcome.
+Jordan: It checks latency, calculates token costs, runs a checksum on the full output, and compares the model's answer to our known baseline. Then it appends a row for each task into our central ledger spreadsheet and updates a heartbeat file for your watchdog.
+Alex: What is the first checkpoint?
+Jordan: Run the script manually from your terminal. You should see three new rows in the ledger, all showing an okay status and a passed flag. Then open up the runs folder to verify the actual output files landed where they belong.
+Alex: But you always say a test that has never failed cannot be trusted.
+Jordan: Never trust a green test on day one. Step three is proving the harness can catch a real break. Change your expected number in the script, run it again, and check the ledger. You want to see the status say okay, but passed switch to false. That proves the assertion actually works. Then change it back.
+Alex: Once it is tested, we automate the whole thing.
+Jordan: Step four is scheduling the script through Windows Task Scheduler to run every Sunday morning. Make sure you set it to run only when your user account is logged on. If it runs as an anonymous system service, it will not have access to your CLI authentication tokens.
+Alex: Let's talk failure modes. What breaks most often when people schedule this?
+Jordan: The most common failure is a command not found error inside Task Scheduler. Your terminal knows where the tools live, but the scheduler might not have your user environment path. If that happens, swap the short tool name for the absolute path to the executable.
+Alex: What about when a run hangs?
+Jordan: If it times out after five minutes, a tool is waiting for human input. It could be an expired session or a first-run folder trust prompt. Run the exact prompt by hand in that directory once, approve it, and the headless run will clear.
+Alex: And the classic issue: the answer is technically correct, but the ledger marks it failed.
+Jordan: That happens when a model wraps JSON in markdown fences or writes a negative number inside parentheses. Do not loosen your parsing check. Tighten your prompt to demand plain JSON.
+Alex: Finally, the ledger leaves two columns blank: reviewer and review date.
+Jordan: That is segregation of duties. An automated script cannot sign off on its own work. You inspect the rows, confirm the versions, and type your initials and date by hand. That turns a log into an IT control.
+Alex: What counts as done today, and what is the keeper artifact?
+Jordan: Done means Task Scheduler fires headless without prompts, updates your watchdog heartbeat, and adds clean rows to the sheet. Your keeper artifact is this week's ledger file with your initials in the review column.
