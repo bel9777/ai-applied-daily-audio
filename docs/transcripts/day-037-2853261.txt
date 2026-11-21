@@ -1,0 +1,21 @@
+Alex: If your AI agent's security guard crashes, does the gate stay locked or swing wide open? Claude Code finally fixed that this week. This is AI Applied.
+Jordan: That is the headline fix in Claude Code version 2.1.328. According to the release notes, MCP tool hooks now support setting the failure action to block.
+Alex: Which means if a safety check drops out or times out, the agent actually stops instead of just plowing ahead.
+Jordan: Exactly. Command and web hooks already had this, but MCP hooks used to fail open. In internal controls terms, a crashed approval step now counts as a hard no instead of a pass. Our verdict for the stack is Adopt. Add that blocking setting to any hook guarding cloud file uploads or ledger writes. Deliberately break the hook once to log the block, and keep that log line as audit evidence.
+Alex: That brings us to our second item, which is also about keeping things locked down: Claude Code 2.1.327 and Claude Desktop. What shipped here?
+Jordan: According to the changelog, Claude Code now lets you pipe server configurations in via standard input, keeping tokens and API keys out of your command line shell history. On the same day, Claude Desktop introduced separate Stable and Latest update channels.
+Alex: Keeping credentials out of terminal history and choosing when desktop software updates. That feels like basic change management.
+Jordan: It is standard IT hygiene. The verdict is Adopt. Pipe your server credentials directly from a secured local file, move Claude Desktop over to the Stable channel, and keep testing new releases solely on the command line interface.
+Alex: Moving on to foundation models, OpenAI dropped GPT-6.2 Astra and Sol this week.
+Jordan: That is right. OpenAI's announcement says both models are live in ChatGPT Work, the API, and Codex. Per million tokens, Astra is eight dollars input and forty dollars output, while Sol sits at two dollars input and ten output. OpenAI claims stronger security safeguards, though independent testing from Epoch AI found Astra trailed Claude Fable 5.2 on realistic work tasks.
+Alex: But there is a catch for automated workflows, right?
+Jordan: A big one. The Codex CLI release notes state that version 0.171.0 made Sol the default model. If you have an unattended script running Codex that does not name an explicit model, your underlying system and costs changed overnight.
+Alex: Treat that like an unapproved change ticket. Pin your model! What is the verdict on GPT-6.2?
+Jordan: The verdict is Try. Re-run your existing routing comparisons using Sol on the exact same tasks. Only keep it if it beats your current pick on accuracy per dollar.
+Alex: Next up, Google is bringing Gemini directly into Apps Script.
+Jordan: Yes, according to the Google Workspace Updates blog, a gradual rollout started mid-November for Rapid and Scheduled release domains, taking up to fifteen days to appear. It allows developers to build and customize automations with Gemini right in the Apps Script editor.
+Alex: The verdict here?
+Jordan: Try, once the feature lands in your domain. Test it against an existing spreadsheet synchronization script. Have it add error handling or header checks, and inspect the code diff carefully before saving.
+Alex: Time for our quick Microsoft 365 Copilot update.
+Jordan: Release notes show no verified changes shipped in this window. If you are prepping for certification, check the roadmap for status tags on Copilot Chat, Pages, and the prebuilt agents. Knowing whether an agent is in preview, frontier, or general availability is essential.
+Alex: What to watch next week in one beat: check if Gemini has landed in your Apps Script editor, and benchmark GPT-6.2 Sol against your current workflow model on cost per correct answer. We will see you tomorrow.

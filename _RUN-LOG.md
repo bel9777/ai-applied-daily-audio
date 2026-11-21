@@ -44,3 +44,4 @@
 2026-11-17 07:02 OK made:1 ondisk:33 ledger:33 missing:0 key:applied PUSHED
 2026-11-18 07:02 OK made:1 ondisk:34 ledger:34 missing:0 key:applied PUSHED
 2026-11-19 07:02 OK made:1 ondisk:35 ledger:35 missing:0 key:applied PUSHED
+2026-11-20 07:02 OK made:1 ondisk:36 ledger:36 missing:0 key:applied PUSHED
