@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-11-16",
+  "week": 6,
+  "key": "5958484f",
+  "title": "Week 6 (Nov 16–22): Days 32–38",
+  "days": [
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 32: Lab 10: Researcher: A Sourced Memo for a Real Decision"
+   },
+   {
+    "start": 248,
+    "title": "Day 33: Lab 11: Analyst: Exploring a Data Export and Checking Its Reasoning"
+   },
+   {
+    "start": 481,
+    "title": "Day 34: Lesson 7: Migrating Gemini TTS to Gemini 3.8 Before the November 17 Shutdown"
+   },
+   {
+    "start": 751,
+    "title": "Day 35: Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience"
+   },
+   {
+    "start": 1001,
+    "title": "Day 36: Build: Route Three Real Tasks to Three Tools and Compare (Part 5)"
+   },
+   {
+    "start": 1278,
+    "title": "Day 37: Release Radar (Nov 21, 2026)"
+   },
+   {
+    "start": 1517,
+    "title": "Day 38: Weekly Review: Your Stack, Mapped (Nov 22)"
+   }
+  ],
+  "durationSeconds": 1767,
+  "url": "https://bel9777.github.io/ai-applied-weekly-audio/weekly/week-06-2026-11-16-5958484f.mp3",
+  "bytes": 14145054,
+  "publishedAt": "2026-11-22T06:35:10"
+ },
+ {
   "weekStart": "2026-11-09",
   "week": 5,
   "key": "de1a074e",

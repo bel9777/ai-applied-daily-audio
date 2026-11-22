@@ -1,0 +1,29 @@
+Alex: It's review day. This is AI Applied.
+Jordan: We have six questions lined up today, all testing your instincts on routing, verifying, and keeping automated work audit-ready. Ready to run the board?
+Alex: Ready. Bring on question one.
+Jordan: Your director asks for a two-page memo on whether to renew an office lease or relocate. You need to pull from internal lease abstracts and rent schedules in your company cloud drive, plus public commercial real estate commentary. Which tool fits best?
+Alex: That has to be the Researcher agent. It is built to pull from your internal work files and the open web at the same time.
+Jordan: Researcher gives you that dual-grounded synthesis, and it matters because it leaves real citations you can click through to verify.
+Alex: Next up.
+Jordan: Question two. You hand Analyst a forty-thousand-row rent-roll spreadsheet and ask for actual-versus-budget variance by building. It hands back a polished chart and a clean table. Before pasting that table into your monthly variance commentary, what do you do first?
+Alex: You definitely don't just paste it. Open the steps and the code it ran, check the row count, and make sure the total rent ties back to the source system's control total.
+Jordan: That is the only acceptable move. An AI analyst is like an associate: you never take the summary table without tying out the workpapers first.
+Alex: Question three.
+Jordan: You used Copilot in Word to draft an executive summary from three source files: a lease abstract, a budget workbook, and an earlier memo. Then you had it rewrite the text for a non-finance audience. A reviewer spots a dollar figure that appears in none of those three files. How do you handle it?
+Alex: You pull that number out immediately. Then you trace every single other figure back to a source file, and regenerate any section that cannot be tied out directly.
+Jordan: File grounding does not make an AI infallible, so any untraced number is an unverified number that cannot leave your desk.
+Alex: What is question four?
+Jordan: Let's do some routing. You have three jobs on your plate: matching a journal upload against a general ledger export, drafting an announcement email for holiday food pre-orders, and refactoring a Python loop to handle API retries. Where does each one go?
+Alex: The journal reconciliation stays inside your enterprise tenant using Excel or Analyst, because the data is governed and leaves an audit trail. The marketing email goes to a general assistant like Claude or ChatGPT with your brand instructions. And the code refactor goes to Claude Code or Codex so you can review a file diff directly in the repository.
+Jordan: Spot on routing. Where the task goes always depends on data boundaries and what kind of review evidence the tool hands back.
+Alex: Bring on number five.
+Jordan: Your finance team wants every prompt to follow the same rules: state the sign convention, label the fiscal period, and never round before totaling. Do those live in personal memory, custom instructions, or shared project instructions?
+Alex: Shared project or agent instructions, every time. Personal memory lives in one person's account, changes without notice, and an outside reviewer cannot see it.
+Jordan: Team standards require a single, transparent source of truth that anyone can audit, exactly like a written accounting policy.
+Alex: Last one. Question six.
+Jordan: A Release Radar update lists a feature you desperately want as announced and rolling out. Can you write it into your team's monthly close checklist today?
+Alex: Absolutely not. You treat it as unavailable until you can confirm it is live and working inside your own tenant.
+Jordan: Announced is not shipped, and writing an unavailable tool into a checklist just creates an open hole in your control process.
+Alex: Perfect score. So what is the single biggest takeaway from this whole week of reviews?
+Jordan: Judge every tool by the evidence it leaves for a reviewer: citations, code, source references, and version numbers. If you cannot trace an output back to its source, it does not belong in your workpapers or in front of your stakeholders.
+Alex: Speed means nothing if an auditor cannot follow your work. We will see you tomorrow.
