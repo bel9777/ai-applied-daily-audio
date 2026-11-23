@@ -1,5 +1,24 @@
 [
  {
+  "day": 39,
+  "title": "Lab 13: Copilot in PowerPoint: A Deck from a Document, with Images and Charts",
+  "format": "two-host",
+  "guid": "applied-day-039",
+  "publishedAt": "2026-11-23T06:36:13",
+  "audioPath": "/audio/day-039-lab-13-copilot-in-powerpoint-a-deck-from-a-document-with-images-and-charts-3194541.mp3",
+  "transcriptPath": "/transcripts/day-039-3194541.txt",
+  "audioBytes": 3194541,
+  "durationSeconds": 266,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 777,
+   "lra": 4.0,
+   "lufs": -16.4,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 38,
   "title": "Weekly Review: Your Stack, Mapped (Nov 22)",
   "format": "two-host",

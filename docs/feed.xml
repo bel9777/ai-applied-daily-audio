@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-applied-daily-audio/cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-applied-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 39: Lab 13: Copilot in PowerPoint: A Deck from a Document, with Images and Charts</title>
+      <description>Lab 13: Copilot in PowerPoint: A Deck from a Document, with Images and Charts - AI Applied day 39, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">applied-day-039</guid>
+      <pubDate>Mon, 23 Nov 2026 06:36:13 +0000</pubDate>
+      <itunes:episode>39</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-applied-daily-audio/audio/day-039-lab-13-copilot-in-powerpoint-a-deck-from-a-document-with-images-and-charts-3194541.mp3" length="3194541" type="audio/mpeg"/>
+      <itunes:duration>4:26</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 6 (Nov 16–22): Days 32–38</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 32: Lab 10: Researcher: A Sourced Memo for a Real Decision&lt;br/&gt;4:08 Day 33: Lab 11: Analyst: Exploring a Data Export and Checking Its Reasoning&lt;br/&gt;8:01 Day 34: Lesson 7: Migrating Gemini TTS to Gemini 3.8 Before the November 17 Shutdown&lt;br/&gt;12:31 Day 35: Lab 12: Copilot in Word: Drafting from Source Files and Rewriting for an Audience&lt;br/&gt;16:41 Day 36: Build: Route Three Real Tasks to Three Tools and Compare (Part 5)&lt;br/&gt;21:18 Day 37: Release Radar (Nov 21, 2026)&lt;br/&gt;25:17 Day 38: Weekly Review: Your Stack, Mapped (Nov 22)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-11-16-5958484f</guid>
