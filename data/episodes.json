@@ -1,5 +1,24 @@
 [
  {
+  "day": 40,
+  "title": "Lab 14: Insights Across Work IQ: Mail, Meetings, Files, and People in One Answer",
+  "format": "two-host",
+  "guid": "applied-day-040",
+  "publishedAt": "2026-11-24T06:36:32",
+  "audioPath": "/audio/day-040-lab-14-insights-across-work-iq-mail-meetings-files-and-people-in-one-answer-3182733.mp3",
+  "transcriptPath": "/transcripts/day-040-3182733.txt",
+  "audioBytes": 3182733,
+  "durationSeconds": 265,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 750,
+   "lra": 3.9,
+   "lufs": -16.8,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 39,
   "title": "Lab 13: Copilot in PowerPoint: A Deck from a Document, with Images and Charts",
   "format": "two-host",
