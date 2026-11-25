@@ -1,5 +1,24 @@
 [
  {
+  "day": 41,
+  "title": "Lesson 8: Migrating Gemini TTS Jobs Off Preview Models: A Fail-Safe Model Swap for Unattended Loops",
+  "format": "two-host",
+  "guid": "applied-day-041",
+  "publishedAt": "2026-11-25T06:36:00",
+  "audioPath": "/audio/day-041-lesson-8-migrating-gemini-tts-jobs-off-preview-models-a-fail-safe-model-swap-for-unattended-loops-2896173.mp3",
+  "transcriptPath": "/transcripts/day-041-2896173.txt",
+  "audioBytes": 2896173,
+  "durationSeconds": 241,
+  "ttsModel": "gemini-3.8-flash-tts",
+  "metrics": {
+   "words": 689,
+   "lra": 3.6,
+   "lufs": -16.5,
+   "dipSeconds": 0.0,
+   "silenceRatio": 0.0
+  }
+ },
+ {
   "day": 40,
   "title": "Lab 14: Insights Across Work IQ: Mail, Meetings, Files, and People in One Answer",
   "format": "two-host",
